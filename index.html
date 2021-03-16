@@ -141,6 +141,8 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/export-page</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh</li>
 
 <li>$:/config/RelinkOnRename</li>
@@ -205,6 +207,8 @@ Error message and password prompt
 
 <li>$:/state/plugin-info-1488554532-$:/plugins/kebi/tiddlystudy-references--213090685</li>
 
+<li>$:/state/sq/streams/current-edit-tiddler--1456228637</li>
+
 <li>$:/state/streams/settings/tabs-1976991403</li>
 
 <li>$:/state/tab--1498284803</li>
@@ -245,6 +249,9 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div created="20210316101812947" modified="20210316101812947" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/export-page">
+<pre>show</pre>
+</div>
 <div created="20210315170034003" modified="20210315170034003" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh">
 <pre>show</pre>
 </div>
@@ -10121,9 +10128,7 @@ Error message and password prompt
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
-# [[$:/plugins/danielo515/ContextPlugin/Stylesheet/results]]
-# [[$:/plugins/danielo515/ContextPlugin/visualizer]]
-# [[$:/plugins/danielo515/ContextPlugin/widgets/context.js]]</pre>
+# [[$:/plugins/kebi/tiddlyresearch-references/config/filters/mentions-title]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -10995,7 +11000,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20210315161701535" description="core" modified="20210315202822541" name="tiddlystudy" plugin-type="plugin" tags="" title="$:/plugins/kebi/tiddlystudy" type="application/json" version="1.0.0">
+<div created="20210315161701535" description="core" modified="20210316100823176" name="tiddlystudy" plugin-type="plugin" tags="" title="$:/plugins/kebi/tiddlystudy" type="application/json" version="1.0.0">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/_Styles&quot;: {
@@ -11242,7 +11247,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20210315163350904" description="bidirectional linking" list="config" modified="20210315202158313" name="tiddlystudy-references" plugin-type="plugin" tags="" title="$:/plugins/kebi/tiddlystudy-references" type="application/json" version="1.0.0">
+<div created="20210315163350904" description="bidirectional linking" list="config" modified="20210316100805051" name="tiddlystudy-references" plugin-type="plugin" tags="" title="$:/plugins/kebi/tiddlystudy-references" type="application/json" version="1.0.0">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/plugins/kebi/tiddlystudy-references/config&quot;: {
@@ -11381,11 +11386,17 @@ Error message and password prompt
             &quot;text&quot;: &quot;\\whitespace trim\n&lt;ul class=\&quot;footer footer-node\&quot;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/node/transclusions\&quot;\n    filter:\&quot;[regexp:text&lt;text-pattern-transclude&gt;] -[is[current]] -[is[system]] -[all[shadows]]\&quot;\n    class:\&quot;filtertransclude\&quot;\n  &gt;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/node/tags\&quot;\n    filter:\&quot;[all[current]tagging[]] -[is[current]] -[is[system]] -[all[shadows]]\&quot;\n    class:\&quot;filtertag\&quot;\n  &gt;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/node/backlinks\&quot;\n    filter:\&quot;[all[current]backlinks[]] [regexp:text&lt;text-pattern-backlink&gt;] -[is[current]] -[is[system]] -[all[shadows]]\&quot;\n    class:\&quot;filterbacklink\&quot;\n  &gt;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/node/mentions-title\&quot;\n    filter:\&quot;[regexp:title&lt;text-pattern&gt;] -[regexp:title&lt;text-pattern-node-title&gt;] -[is[current]] -[is[system]] -[all[shadows]]\&quot;\n    class:\&quot;filtertitle\&quot;\n  &gt;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/node/mentions-text\&quot;\n    filter:\&quot;[regexp:text&lt;text-pattern&gt;] -[is[current]] -[is[system]] -[all[shadows]] -[all[current]backlinks[]] -[regexp:text&lt;text-pattern-backlink&gt;] -[regexp:text&lt;text-pattern-transclude&gt;] -[regexp:text&lt;text-pattern-reference&gt;]\&quot;\n    class:\&quot;filtertext\&quot;\n  &gt;&gt;\n&lt;/ul&gt;&quot;,
             &quot;title&quot;: &quot;$:/plugins/kebi/tiddlystudy-references/filters-node&quot;,
             &quot;modified&quot;: &quot;20210315171522281&quot;
+        },
+        &quot;$:/plugins/kebi/tiddlystudy-references/config/filters/mentions-title&quot;: {
+            &quot;created&quot;: &quot;20201013072614607&quot;,
+            &quot;text&quot;: &quot;enable&quot;,
+            &quot;title&quot;: &quot;$:/plugins/kebi/tiddlystudy-references/config/filters/mentions-title&quot;,
+            &quot;modified&quot;: &quot;20210316100415042&quot;
         }
     }
 }</pre>
 </div>
-<div author="Roman Veselý" bag="default" core-version="&gt;=5.0.8" created="20210315164803498" dependents="" description="Horizontal Story River" list="readme settings" modified="20210315202050736" name="Krystal (tiddlystudy)" plugin-type="plugin" revision="0" source="https://github.com/crazko/krystal" title="$:/plugins/rmnvsl/krystal" type="application/json" version="0.3.4">
+<div author="Roman Veselý" bag="default" core-version="&gt;=5.0.8" created="20210315164803498" dependents="" description="Horizontal Story River" list="readme settings" modified="20210316101720496" name="Krystal (tiddlystudy)" plugin-type="plugin" revision="0" source="https://github.com/crazko/krystal" title="$:/plugins/rmnvsl/krystal" type="application/json" version="0.3.4">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/plugins/rmnvsl/krystal/buttons/maximize&quot;: {
@@ -11520,16 +11531,20 @@ Error message and password prompt
             &quot;text&quot;: &quot;{{||$:/core/ui/PageTemplate/pagecontrols}}\n&quot;
         },
         &quot;$:/core/ui/SideBarSegments/site-subtitle&quot;: {
+            &quot;created&quot;: &quot;20210316101647609&quot;,
+            &quot;text&quot;: &quot;&lt;div class=\&quot;tc-site-subtitle\&quot;&gt;\n\n&lt;$transclude tiddler=\&quot;$:/SiteSubtitle\&quot; mode=\&quot;inline\&quot;/&gt;\n\n&lt;/div&gt;\n&quot;,
             &quot;title&quot;: &quot;$:/core/ui/SideBarSegments/site-subtitle&quot;,
-            &quot;tags&quot;: &quot;$:/tags/SideBarSegment $:/plugins/rmnvsl/krystal/header&quot;,
+            &quot;tags&quot;: &quot;$:/tags/SideBarSegment tiddlystudy&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;&lt;div class=\&quot;tc-site-subtitle\&quot;&gt;\n\n&lt;$transclude tiddler=\&quot;$:/SiteSubtitle\&quot; mode=\&quot;inline\&quot;/&gt;\n\n&lt;/div&gt;\n&quot;
+            &quot;modified&quot;: &quot;20210316101651782&quot;
         },
         &quot;$:/core/ui/SideBarSegments/site-title&quot;: {
+            &quot;created&quot;: &quot;20210316101636763&quot;,
+            &quot;text&quot;: &quot;&lt;h1 class=\&quot;tc-site-title\&quot;&gt;\n\n&lt;$transclude tiddler=\&quot;$:/SiteTitle\&quot; mode=\&quot;inline\&quot;/&gt;\n\n&lt;/h1&gt;\n&quot;,
             &quot;title&quot;: &quot;$:/core/ui/SideBarSegments/site-title&quot;,
-            &quot;tags&quot;: &quot;$:/tags/SideBarSegment $:/plugins/rmnvsl/krystal/header&quot;,
+            &quot;tags&quot;: &quot;$:/tags/SideBarSegment tiddlystudy&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;&lt;h1 class=\&quot;tc-site-title\&quot;&gt;\n\n&lt;$transclude tiddler=\&quot;$:/SiteTitle\&quot; mode=\&quot;inline\&quot;/&gt;\n\n&lt;/h1&gt;\n&quot;
+            &quot;modified&quot;: &quot;20210316101640494&quot;
         },
         &quot;$:/core/ui/TopBar/menu&quot;: {
             &quot;title&quot;: &quot;$:/core/ui/TopBar/menu&quot;,
@@ -12405,22 +12420,22 @@ Error message and password prompt
 <div created="20210315162502436" modified="20210315162518996" title="$:/state/plugin-info--896887961-$:/plugins/flibbles/relink---548854025">
 <pre>readme</pre>
 </div>
-<div created="20210315162527708" modified="20210315202813080" title="$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy">
+<div created="20210315162527708" modified="20210316100748400" title="$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy">
 <pre>no</pre>
 </div>
-<div created="20210315170822225" modified="20210315202435992" title="$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy-references">
+<div created="20210315170822225" modified="20210316101019491" title="$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy-references">
 <pre>no</pre>
 </div>
-<div created="20210315170826482" modified="20210315202432943" title="$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy-references--1748746176">
-<pre>config</pre>
+<div created="20210315170826482" modified="20210316100952478" title="$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy-references--1748746176">
+<pre>contents</pre>
 </div>
-<div created="20210315164631714" modified="20210315202109479" title="$:/state/plugin-info--896887961-$:/plugins/rmnvsl/krystal">
+<div created="20210315164631714" modified="20210316101709719" title="$:/state/plugin-info--896887961-$:/plugins/rmnvsl/krystal">
 <pre>no</pre>
 </div>
 <div created="20210315164900979" modified="20210315164900979" title="$:/state/plugin-info--896887961-$:/plugins/rmnvsl/krystal (tiddlystudy)">
 <pre>yes</pre>
 </div>
-<div created="20210315164633155" modified="20210315202108927" title="$:/state/plugin-info--896887961-$:/plugins/rmnvsl/krystal--627067479">
+<div created="20210315164633155" modified="20210316101707799" title="$:/state/plugin-info--896887961-$:/plugins/rmnvsl/krystal--627067479">
 <pre>readme</pre>
 </div>
 <div created="20210315165124267" modified="20210315165127507" title="$:/state/plugin-info--896887961-$:/plugins/sobjornstad/TiddlyRemember">
@@ -12450,13 +12465,16 @@ Error message and password prompt
 <div created="20210315170939758" modified="20210315171008727" title="$:/state/plugin-info-1488554532-$:/plugins/kebi/tiddlystudy-references--213090685">
 <pre>config</pre>
 </div>
+<div created="20210316094503341" modified="20210316094503341" title="$:/state/sq/streams/current-edit-tiddler--1456228637">
+<pre>New Tiddler 1</pre>
+</div>
 <div created="20210315170135365" modified="20210315170137317" title="$:/state/streams/settings/tabs-1976991403">
 <pre>$:/plugins/sq/streams/Settings/config</pre>
 </div>
 <div created="20210315170015932" modified="20210315202300633" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Shadows</pre>
 </div>
-<div created="20210315165942355" modified="20210315170243760" title="$:/state/tab--1963855381">
+<div created="20210315165942355" modified="20210316101814568" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Palette</pre>
 </div>
 <div created="20210315164524339" modified="20210315164525162" title="$:/state/tab--2112689675">
@@ -12465,11 +12483,11 @@ Error message and password prompt
 <div created="20210315162506380" modified="20210315162518508" title="$:/state/tab--824315756">
 <pre>$:/plugins/flibbles/relink/ui/configuration/Attributes</pre>
 </div>
-<div created="20210315162459051" modified="20210315202831161" title="$:/state/tab-1749438307">
+<div created="20210315162459051" modified="20210316101815844" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
-<div created="20210315165956371" modified="20210315170242720" title="$:/state/tabs/controlpanel/toolbars-1345989671">
-<pre>$:/core/ui/ControlPanel/Toolbars/EditorToolbar</pre>
+<div created="20210315165956371" modified="20210316101813941" title="$:/state/tabs/controlpanel/toolbars-1345989671">
+<pre>$:/core/ui/ControlPanel/Toolbars/EditToolbar</pre>
 </div>
 <div created="20210315202706512" modified="20210315202714833" title="$:/state/toc/folder-New Tiddler--544497285">
 <pre>open</pre>
@@ -12477,7 +12495,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210315202829970" list="GettingStarted" modified="20210315202842658" title="$:/StoryList">
+<div created="20210316101759725" list="GettingStarted" modified="20210316101759725" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210315183128677" list="$:/plugins/kebi/tiddlystudy/search/nodes $:/core/ui/AdvancedSearch/Standard $:/core/ui/AdvancedSearch/System $:/core/ui/AdvancedSearch/Shadows $:/core/ui/AdvancedSearch/Filter" modified="20210315183153068" title="$:/tags/AdvancedSearch">
