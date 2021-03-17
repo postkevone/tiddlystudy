@@ -151,8 +151,6 @@ Error message and password prompt
 
 <li>$:/core</li>
 
-<li>$:/Import</li>
-
 <li>$:/isEncrypted</li>
 
 <li>$:/plugins/flibbles/relink</li>
@@ -173,9 +171,15 @@ Error message and password prompt
 
 <li>$:/state/plugin-info--13644322-$:/plugins/sq/streams---1916247561</li>
 
+<li>$:/state/plugin-info--896887961-$:/core</li>
+
 <li>$:/state/plugin-info--896887961-$:/plugins/flibbles/relink</li>
 
 <li>$:/state/plugin-info--896887961-$:/plugins/flibbles/relink---548854025</li>
+
+<li>$:/state/plugin-info--896887961-$:/plugins/flibbles/relink-titles</li>
+
+<li>$:/state/plugin-info--896887961-$:/plugins/flibbles/relink-titles---174060577</li>
 
 <li>$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy</li>
 
@@ -207,7 +211,7 @@ Error message and password prompt
 
 <li>$:/state/plugin-info-1488554532-$:/plugins/kebi/tiddlystudy-references--213090685</li>
 
-<li>$:/state/sq/streams/current-edit-tiddler--1456228637</li>
+<li>$:/state/sq/streams/current-edit-tiddler--30666222</li>
 
 <li>$:/state/streams/settings/tabs-1976991403</li>
 
@@ -10125,11 +10129,6 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div status="complete" title="$:/Import">
-<pre>The following tiddlers were imported:
-
-# [[$:/plugins/kebi/tiddlyresearch-references/config/filters/mentions-title]]</pre>
-</div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
@@ -11000,7 +10999,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20210315161701535" description="core" modified="20210316100823176" name="tiddlystudy" plugin-type="plugin" tags="" title="$:/plugins/kebi/tiddlystudy" type="application/json" version="1.0.0">
+<div created="20210315161701535" description="core" modified="20210317110628147" name="tiddlystudy" plugin-type="plugin" tags="" title="$:/plugins/kebi/tiddlystudy" type="application/json" version="1.0.0">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/_Styles&quot;: {
@@ -11134,11 +11133,11 @@ Error message and password prompt
         },
         &quot;$:/core/ui/EditorToolbar/transcludify&quot;: {
             &quot;created&quot;: &quot;20200906045848467&quot;,
-            &quot;text&quot;: &quot;&lt;$action-sendmessage\n\t$message=\&quot;tm-edit-text-operation\&quot;\n\t$param=\&quot;wrap-selection\&quot;\n\tprefix=\&quot;{{\&quot;\n\tsuffix=\&quot;}}\&quot;\n/&gt;\n&quot;,
+            &quot;text&quot;: &quot;&lt;$action-sendmessage\n\t$message=\&quot;tm-edit-text-operation\&quot;\n\t$param=\&quot;wrap-selection\&quot;\n\tprefix=\&quot;{{\&quot;\n\tsuffix=\&quot;||.strm}}\&quot;\n/&gt;\n&quot;,
             &quot;title&quot;: &quot;$:/core/ui/EditorToolbar/transcludify&quot;,
             &quot;tags&quot;: &quot;$:/tags/EditorToolbar&quot;,
             &quot;shortcuts&quot;: &quot;((transclude))&quot;,
-            &quot;modified&quot;: &quot;20210315162722909&quot;,
+            &quot;modified&quot;: &quot;20210317092434705&quot;,
             &quot;icon&quot;: &quot;$:/core/images/transcludify&quot;,
             &quot;description&quot;: &quot;{{$:/language/Buttons/Transcludify/Hint}}&quot;,
             &quot;condition&quot;: &quot;[&lt;targetTiddler&gt;!has[type]] [&lt;targetTiddler&gt;type[text/vnd.tiddlywiki]]&quot;,
@@ -11210,19 +11209,11 @@ Error message and password prompt
             &quot;creator&quot;: &quot;danielo&quot;
         },
         &quot;$:/plugins/kebi/tiddlystudy/search/visualizer&quot;: {
-            &quot;text&quot;: &quot;\\define search-text()\n$(pattern)$(?i)\n\\end\n\n&lt;div class=\&quot;tw-search-results\&quot;&gt;\n\t&lt;$reveal state=\&quot;$:/temp/advancedsearch\&quot; type=\&quot;nomatch\&quot; text=\&quot;\&quot;&gt;\n\t\t&lt;$set name=\&quot;pattern\&quot; value={{$:/temp/advancedsearch}}&gt;\n\t\t\t&lt;$list filter=\&quot;[regexp:title&lt;search-text&gt;limit[250]] -[is[system]] -[all[shadows]]\&quot;&gt;\n\t\t\t\t{{!!title||$:/core/ui/ListItemTemplate}}\n\t\t\t&lt;/$list&gt;\n\t\t&lt;/$set&gt;\n\t&lt;/$reveal&gt;\n\t&lt;$reveal state=\&quot;$:/temp/advancedsearch\&quot; type=\&quot;nomatch\&quot; text=\&quot;\&quot;&gt;\n\t\t&lt;$set name=\&quot;pattern\&quot; value={{$:/temp/advancedsearch}}&gt;\n\t\t\t&lt;$list filter=\&quot;[regexp:text&lt;search-text&gt;!sort[created]limit[250]] -[is[system]] -[all[shadows]] -[is[image]]\&quot;&gt;\n\t\t\t\t&lt;hr&gt;\n\t\t\t\t{{!!title||$:/core/ui/ListItemTemplate}}\n\t\t\t\t&lt;$context term=&lt;&lt;pattern&gt;&gt;/&gt;\n\t\t\t&lt;/$list&gt;\n\t\t&lt;/$set&gt;\n\t&lt;/$reveal&gt;\n&lt;/div&gt;&quot;,
+            &quot;created&quot;: &quot;20200905042015974&quot;,
+            &quot;text&quot;: &quot;\\define search-text()\n$(pattern)$(?i)\n\\end\n\n&lt;div class=\&quot;tw-search-results\&quot;&gt;\n\t&lt;$reveal state=\&quot;$:/temp/advancedsearch\&quot; type=\&quot;nomatch\&quot; text=\&quot;\&quot;&gt;\n\t\t&lt;$set name=\&quot;pattern\&quot; value={{$:/temp/advancedsearch}}&gt;\n\t\t\t&lt;$list filter=\&quot;[regexp:title&lt;search-text&gt;limit[250]] -[has[parent]] -[is[system]] -[all[shadows]]\&quot;&gt;\n\t\t\t\t{{!!title||$:/core/ui/ListItemTemplate}}\n\t\t\t&lt;/$list&gt;\n\t\t&lt;/$set&gt;\n\t&lt;/$reveal&gt;\n\t&lt;$reveal state=\&quot;$:/temp/advancedsearch\&quot; type=\&quot;nomatch\&quot; text=\&quot;\&quot;&gt;\n\t\t&lt;$set name=\&quot;pattern\&quot; value={{$:/temp/advancedsearch}}&gt;\n\t\t\t&lt;$list filter=\&quot;[regexp:text&lt;search-text&gt;!sort[created]limit[250]] -[is[system]] -[all[shadows]] -[is[image]]\&quot;&gt;\n\t\t\t\t&lt;hr&gt;\n\t\t\t\t{{!!title||$:/core/ui/ListItemTemplate}}\n\t\t\t\t&lt;$context term=&lt;&lt;pattern&gt;&gt;/&gt;\n\t\t\t&lt;/$list&gt;\n\t\t&lt;/$set&gt;\n\t&lt;/$reveal&gt;\n&lt;/div&gt;&quot;,
             &quot;title&quot;: &quot;$:/plugins/kebi/tiddlystudy/search/visualizer&quot;,
             &quot;tags&quot;: &quot;&quot;,
-            &quot;modified&quot;: &quot;20210315202007593&quot;,
-            &quot;created&quot;: &quot;20200905042015974&quot;
-        },
-        &quot;$:/plugins/kebi/tiddlystudy/search/results.css&quot;: {
-            &quot;created&quot;: &quot;20140529162823729&quot;,
-            &quot;text&quot;: &quot;.matched{background-color:yellow}\n.tw-context {/*border:1px solid;\n  /*word-break: break-all; word-wrap: break-word*/}&quot;,
-            &quot;type&quot;: &quot;text/css&quot;,
-            &quot;title&quot;: &quot;$:/plugins/kebi/tiddlystudy/search/results.css&quot;,
-            &quot;tags&quot;: &quot;$:/tags/Stylesheet&quot;,
-            &quot;modified&quot;: &quot;20210315175521122&quot;
+            &quot;modified&quot;: &quot;20210317102530513&quot;
         },
         &quot;$:/plugins/kebi/tiddlystudy/search/nodes&quot;: {
             &quot;created&quot;: &quot;20210315180641389&quot;,
@@ -11243,11 +11234,33 @@ Error message and password prompt
             &quot;text&quot;: &quot;{{$:/SiteTitle}}&quot;,
             &quot;title&quot;: &quot;$:/core/wiki/title&quot;,
             &quot;modified&quot;: &quot;20210315200722820&quot;
+        },
+        &quot;.strm&quot;: {
+            &quot;created&quot;: &quot;20210317085701784&quot;,
+            &quot;text&quot;: &quot;&lt;div style=\&quot;border-radius: 7.5px; padding: 1em 1.5em; background-color: #eff5e5 !important\&quot;&gt;\n&lt;$link&gt;{{!!title}}&lt;/$link&gt;\n{{||$:/core/ui/ViewTemplate/tags}}\n{{!!text}}\n{{||$:/plugins/sq/streams/stream-view-template}}\n&lt;/div&gt;&quot;,
+            &quot;tags&quot;: &quot;&quot;,
+            &quot;title&quot;: &quot;.strm&quot;,
+            &quot;modified&quot;: &quot;20210317092313417&quot;
+        },
+        &quot;$:/plugins/kebi/tiddlystudy/search/topbar&quot;: {
+            &quot;created&quot;: &quot;20210317095236083&quot;,
+            &quot;text&quot;: &quot;&lt;$set name=\&quot;searchTiddler\&quot; value=\&quot;$:/temp/advancedsearch\&quot;&gt;\n  &lt;div class=\&quot;tc-sidebar-search topbar-search\&quot;&gt;\n    &lt;$edit-text tiddler=&lt;&lt;searchTiddler&gt;&gt; tag=\&quot;input\&quot; type=\&quot;search\&quot; focusPopup=\&quot;$:/state/popup/search-dropdown\&quot; class=\&quot;tc-popup-handle\&quot; placeholder=\&quot;\&quot; default=\&quot;\&quot;/&gt;\n    &lt;$button tooltip={{$:/language/Buttons/AdvancedSearch/Hint}} aria-label={{$:/language/Buttons/AdvancedSearch/Caption}} class=\&quot;tc-btn-invisible tc-page-controls\&quot;&gt;\n      &lt;$action-navigate $to=\&quot;$:/AdvancedSearch\&quot;/&gt;\n      {{$:/core/images/advanced-search-button}}\n    &lt;/$button&gt;\n\n    &lt;$reveal tag=\&quot;div\&quot; class=\&quot;tc-block-dropdown-wrapper\&quot; state=\&quot;$:/state/popup/search-dropdown\&quot; type=\&quot;nomatch\&quot; text=\&quot;\&quot; default=\&quot;\&quot;&gt;\n      &lt;$list filter=\&quot;[&lt;searchTiddler&gt;get[text]minlength{$:/config/Search/MinLength}limit[1]]\&quot; emptyMessage=\&quot;\&quot; variable=\&quot;listItem\&quot;&gt;\n        &lt;div class=\&quot;tc-block-dropdown tc-search-drop-down src-dropdown\&quot;&gt;\n          {{$:/plugins/kebi/tiddlystudy/search/visualizer}}\n        &lt;/div&gt;\n      &lt;/$list&gt;\n    &lt;/$reveal&gt;\n  &lt;/div&gt;\n&lt;/$set&gt;&quot;,
+            &quot;tags&quot;: &quot;&quot;,
+            &quot;title&quot;: &quot;$:/plugins/kebi/tiddlystudy/search/topbar&quot;,
+            &quot;modified&quot;: &quot;20210317110007971&quot;
+        },
+        &quot;$:/plugins/kebi/tiddlystudy/search/css&quot;: {
+            &quot;created&quot;: &quot;20140529162823729&quot;,
+            &quot;text&quot;: &quot;.matched{background-color:yellow}\n.tw-context {/*border:1px solid;\n  /*word-break: break-all; word-wrap: break-word*/}\n\n.topbar-search {\n  margin-top: -1.1em !important;\n}\n.src-dropdown {\n  right: 1.7em;\n  max-width: 500px;\n}\n@media (max-width: 750px) {\n  .src-dropdown {\n    width: 100% !important;\n    max-width: 750px;\n    margin: 0 auto !important;\n    right: 0em;\n  }\n}&quot;,
+            &quot;type&quot;: &quot;text/css&quot;,
+            &quot;title&quot;: &quot;$:/plugins/kebi/tiddlystudy/search/css&quot;,
+            &quot;tags&quot;: &quot;$:/tags/Stylesheet&quot;,
+            &quot;modified&quot;: &quot;20210317110331087&quot;
         }
     }
 }</pre>
 </div>
-<div created="20210315163350904" description="bidirectional linking" list="config" modified="20210316100805051" name="tiddlystudy-references" plugin-type="plugin" tags="" title="$:/plugins/kebi/tiddlystudy-references" type="application/json" version="1.0.0">
+<div created="20210315163350904" description="bidirectional linking" list="config" modified="20210317111431113" name="tiddlystudy-references" plugin-type="plugin" tags="" title="$:/plugins/kebi/tiddlystudy-references" type="application/json" version="1.0.0">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/plugins/kebi/tiddlystudy-references/config&quot;: {
@@ -11369,23 +11382,23 @@ Error message and password prompt
         },
         &quot;$:/plugins/kebi/tiddlystudy-references/css&quot;: {
             &quot;created&quot;: &quot;20200827004041319&quot;,
-            &quot;text&quot;: &quot;.footer {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  padding: 0;\n  margin: 1em 0;\n}\n\n.stream-node-block p {\n    margin: 0.25em 0;\n}\n\n.footer-node {\n  margin: 0;\n}\n\n.filtertransclude,\n.filtertag,\n.filterbacklink,\n.filtertitle,\n.filtertext {\n  display: -webkit-inline-box;\n  display: -ms-inline-flexbox;\n  display: inline-flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  position: relative;\n  border: none;\n  border-radius: 3px;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  min-width: 20px;\n  max-width: 100%;\n  min-height: 20px;\n  line-height: 16px;\n  font-size: 12px;\n  margin: 2px;\n  padding: 2px 6px;\n}\n\n.filtertransclude {\n  background-color: {{$:/plugins/kebi/tiddlystudy-references/config/colors/transclusions!!back-color}};\n}\n\n.filtertag {\n  background-color: {{$:/plugins/kebi/tiddlystudy-references/config/colors/tags!!back-color}};\n}\n\n.filterbacklink {\n  background-color: {{$:/plugins/kebi/tiddlystudy-references/config/colors/backlinks!!back-color}};\n}\n\n.filtertitle{\n  background-color: {{$:/plugins/kebi/tiddlystudy-references/config/colors/mentions-title!!back-color}};\n}\n\n.filtertext {\n  background-color: {{$:/plugins/kebi/tiddlystudy-references/config/colors/mentions-text!!back-color}};\n}\n\n.filtertransclude:hover,\n.filtertag:hover,\n.filterbacklink:hover,\n.filtertitle:hover,\n.filtertext:hover {\n  opacity: 0.8;\n}\n\n.filtertransclude a, .filtertransclude a:hover,\n.filtertag a, .filtertag a:hover,\n.filterbacklink a, .filterbacklink a:hover,\n.filtertitle a, .filtertitle a:hover,\n.filtertext a, .filtertext a:hover {\n  opacity: 1 !important;\n  text-decoration: none !important;\n  line-height: unset;\n  background-color: unset;\n  border: none;\n  padding: 0;\n}\n\n.filtertransclude a, .filtertransclude a:hover {\n  color: {{$:/plugins/kebi/tiddlystudy-references/config/colors/transclusions!!text-color}} !important;\n}\n\n.filtertag a, .filtertag a:hover {\n  color: {{$:/plugins/kebi/tiddlystudy-references/config/colors/tags!!text-color}} !important;\n}\n\n.filterbacklink a, .filterbacklink a:hover {\n  color: {{$:/plugins/kebi/tiddlystudy-references/config/colors/backlinks!!text-color}} !important;\n}\n\n.filtertitle a, .filtertitle a:hover {\n  color: {{$:/plugins/kebi/tiddlystudy-references/config/colors/mentions-title!!text-color}} !important;\n}\n\n.filtertext a, .filtertext a:hover {\n  color: {{$:/plugins/kebi/tiddlystudy-references/config/colors/mentions-text!!text-color}} !important;\n}&quot;,
+            &quot;text&quot;: &quot;.footer {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  padding: 0;\n  margin: 0;\n}\n\n.stream-node-block p {\n    margin: 0.25em 0;\n}\n\n.footer-node {\n  margin: 0.7em 0 0 0;\n}\n\n.filtertransclude,\n.filtertag,\n.filterbacklink,\n.filtertitle,\n.filtertext {\n  display: -webkit-inline-box;\n  display: -ms-inline-flexbox;\n  display: inline-flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  position: relative;\n  border: none;\n  border-radius: 3px;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  min-width: 20px;\n  max-width: 100%;\n  min-height: 20px;\n  line-height: 16px;\n  font-size: 12px;\n  margin: 2px;\n  padding: 2px 6px;\n}\n\n.filtertransclude {\n  background-color: {{$:/plugins/kebi/tiddlystudy-references/config/colors/transclusions!!back-color}};\n}\n\n.filtertag {\n  background-color: {{$:/plugins/kebi/tiddlystudy-references/config/colors/tags!!back-color}};\n}\n\n.filterbacklink {\n  background-color: {{$:/plugins/kebi/tiddlystudy-references/config/colors/backlinks!!back-color}};\n}\n\n.filtertitle{\n  background-color: {{$:/plugins/kebi/tiddlystudy-references/config/colors/mentions-title!!back-color}};\n}\n\n.filtertext {\n  background-color: {{$:/plugins/kebi/tiddlystudy-references/config/colors/mentions-text!!back-color}};\n}\n\n.filtertransclude:hover,\n.filtertag:hover,\n.filterbacklink:hover,\n.filtertitle:hover,\n.filtertext:hover {\n  opacity: 0.8;\n}\n\n.filtertransclude a, .filtertransclude a:hover,\n.filtertag a, .filtertag a:hover,\n.filterbacklink a, .filterbacklink a:hover,\n.filtertitle a, .filtertitle a:hover,\n.filtertext a, .filtertext a:hover {\n  opacity: 1 !important;\n  text-decoration: none !important;\n  line-height: unset;\n  background-color: unset;\n  border: none;\n  padding: 0;\n}\n\n.filtertransclude a, .filtertransclude a:hover {\n  color: {{$:/plugins/kebi/tiddlystudy-references/config/colors/transclusions!!text-color}} !important;\n}\n\n.filtertag a, .filtertag a:hover {\n  color: {{$:/plugins/kebi/tiddlystudy-references/config/colors/tags!!text-color}} !important;\n}\n\n.filterbacklink a, .filterbacklink a:hover {\n  color: {{$:/plugins/kebi/tiddlystudy-references/config/colors/backlinks!!text-color}} !important;\n}\n\n.filtertitle a, .filtertitle a:hover {\n  color: {{$:/plugins/kebi/tiddlystudy-references/config/colors/mentions-title!!text-color}} !important;\n}\n\n.filtertext a, .filtertext a:hover {\n  color: {{$:/plugins/kebi/tiddlystudy-references/config/colors/mentions-text!!text-color}} !important;\n}&quot;,
             &quot;title&quot;: &quot;$:/plugins/kebi/tiddlystudy-references/css&quot;,
             &quot;tags&quot;: &quot;$:/tags/Stylesheet&quot;,
-            &quot;modified&quot;: &quot;20210315163859931&quot;
+            &quot;modified&quot;: &quot;20210317111258935&quot;
         },
         &quot;$:/plugins/kebi/tiddlystudy-references/filters&quot;: {
             &quot;created&quot;: &quot;20200827003650814&quot;,
-            &quot;text&quot;: &quot;\\whitespace trim\n\\define generate-list(statetiddler, filter, class)\n\\whitespace trim\n  &lt;$reveal type=\&quot;match\&quot; state=\&quot;$statetiddler$\&quot; text=\&quot;enable\&quot;&gt;\n    &lt;$list filter=\&quot;$filter$\&quot;&gt;\n      &lt;li class=\&quot;$class$\&quot;&gt;\n        &lt;$link to={{!!title}}&gt;\n          &lt;$transclude field=\&quot;caption\&quot;&gt;\n            &lt;$reveal type=\&quot;nomatch\&quot; state=\&quot;$:/plugins/kebi/tiddlystudy-references/config/no-id\&quot; text=\&quot;enable\&quot;&gt;\n              &lt;$view field=\&quot;title\&quot;/&gt;\n            &lt;/$reveal&gt;\n            &lt;$reveal type=\&quot;match\&quot; state=\&quot;$:/plugins/kebi/tiddlystudy-references/config/no-id\&quot; text=\&quot;enable\&quot;&gt;\n              &lt;$list filter=\&quot;[&lt;currentTiddler&gt;is[image]]\&quot;&gt;\n                &lt;$view field=\&quot;title\&quot;/&gt;\n              &lt;/$list&gt;\n              &lt;$list filter=\&quot;[&lt;currentTiddler&gt;!is[image]]\&quot;&gt;\n                &lt;$wikify name=\&quot;display-title\&quot; text={{{ [&lt;currentTiddler&gt;get[text]!is[blank]] ~[{!!title}] }}}&gt;\n                  &lt;$link to=&lt;&lt;currentTiddler&gt;&gt;&gt;\n                    &lt;$text text={{{ [&lt;display-title&gt;split[]first[50]join[]] }}}/&gt;\n                  &lt;/$link&gt;\n                &lt;/$wikify&gt;\n              &lt;/$list&gt;\n            &lt;/$reveal&gt;\n          &lt;/$transclude&gt;\n        &lt;/$link&gt;\n      &lt;/li&gt;\n    &lt;/$list&gt;\n  &lt;/$reveal&gt;\n\\end\n\n\\define text-pattern()\n$(currentTiddler)$(?i)\n\\end\n\n\\define text-pattern-transclude()\n\\u007B\\u007B$(currentTiddler)$\\u007D\\u007D\n\\end\n\n\\define text-pattern-backlink()\n\\u005B\\u005B$(currentTiddler)$\\u005D\\u005D(?i)\n\\end\n\n\\define text-pattern-reference()\nreference=\&quot;$(currentTiddler)$\&quot;\n\\end\n\n\\define text-pattern-node-title()\n$(currentTiddler)$\\u002F2\n\\end\n\n&lt;ul class=\&quot;footer\&quot;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/transclusions\&quot;\n    filter:\&quot;[regexp:text&lt;text-pattern-transclude&gt;] -[is[current]] -[is[system]] -[all[shadows]] -[is[image]]\&quot;\n    class:\&quot;filtertransclude\&quot;\n  &gt;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/tags\&quot;\n    filter:\&quot;[all[current]tagging[]] -[is[current]] -[is[system]] -[all[shadows]]\&quot;\n    class:\&quot;filtertag\&quot;\n  &gt;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/backlinks\&quot;\n    filter:\&quot;[all[current]backlinks[]] [regexp:text&lt;text-pattern-backlink&gt;] -[is[current]] -[is[system]] -[all[shadows]] -[is[image]]\&quot;\n    class:\&quot;filterbacklink\&quot;\n  &gt;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/mentions-title\&quot;\n    filter:\&quot;[regexp:title&lt;text-pattern&gt;] -[regexp:title&lt;text-pattern-node-title&gt;] -[is[current]] -[is[system]] -[all[shadows]]\&quot;\n    class:\&quot;filtertitle\&quot;\n  &gt;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/mentions-text\&quot;\n    filter:\&quot;[regexp:text&lt;text-pattern&gt;] -[is[current]] -[is[system]] -[all[shadows]] -[is[image]] -[all[current]backlinks[]] -[regexp:text&lt;text-pattern-backlink&gt;] -[regexp:text&lt;text-pattern-transclude&gt;] -[regexp:text&lt;text-pattern-reference&gt;]\&quot;\n    class:\&quot;filtertext\&quot;\n  &gt;&gt;\n&lt;/ul&gt;&quot;,
+            &quot;text&quot;: &quot;\\whitespace trim\n\\define generate-list(statetiddler, filter, class)\n\\whitespace trim\n  &lt;$reveal type=\&quot;match\&quot; state=\&quot;$statetiddler$\&quot; text=\&quot;enable\&quot;&gt;\n    &lt;$list filter=\&quot;$filter$\&quot;&gt;\n      &lt;li class=\&quot;$class$\&quot;&gt;\n        &lt;$link to={{!!title}}&gt;\n          &lt;$transclude field=\&quot;caption\&quot;&gt;\n            &lt;$reveal type=\&quot;nomatch\&quot; state=\&quot;$:/plugins/kebi/tiddlystudy-references/config/no-id\&quot; text=\&quot;enable\&quot;&gt;\n              &lt;$view field=\&quot;title\&quot;/&gt;\n            &lt;/$reveal&gt;\n            &lt;$reveal type=\&quot;match\&quot; state=\&quot;$:/plugins/kebi/tiddlystudy-references/config/no-id\&quot; text=\&quot;enable\&quot;&gt;\n              &lt;$list filter=\&quot;[&lt;currentTiddler&gt;is[image]]\&quot;&gt;\n                &lt;$view field=\&quot;title\&quot;/&gt;\n              &lt;/$list&gt;\n              &lt;$list filter=\&quot;[&lt;currentTiddler&gt;!is[image]]\&quot;&gt;\n                &lt;$wikify name=\&quot;display-title\&quot; text={{{ [&lt;currentTiddler&gt;get[text]!is[blank]] ~[{!!title}] }}}&gt;\n                  &lt;$link to=&lt;&lt;currentTiddler&gt;&gt;&gt;\n                    &lt;$text text={{{ [&lt;display-title&gt;split[]first[50]join[]] }}}/&gt;\n                  &lt;/$link&gt;\n                &lt;/$wikify&gt;\n              &lt;/$list&gt;\n            &lt;/$reveal&gt;\n          &lt;/$transclude&gt;\n        &lt;/$link&gt;\n      &lt;/li&gt;\n    &lt;/$list&gt;\n  &lt;/$reveal&gt;\n\\end\n\n\\define text-pattern()\n$(currentTiddler)$(?i)\n\\end\n\n\\define text-pattern-transclude()\n\\u007B\\u007B$(currentTiddler)$\\u007D\\u007D\n\\end\n\n\\define text-pattern-transclude-strm()\n\\u007B\\u007B$(currentTiddler)$\\u007C\\u007C\\u002Estrm\\u007D\\u007D\n\\end\n\n\\define text-pattern-backlink()\n\\u005B\\u005B$(currentTiddler)$\\u005D\\u005D(?i)\n\\end\n\n\\define text-pattern-reference()\nreference\\u003D\\u0022$(currentTiddler)$(?i)\n\\end\n\n&lt;ul class=\&quot;footer\&quot;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/transclusions\&quot;\n    filter:\&quot;[regexp:text&lt;text-pattern-transclude&gt;] [regexp:text&lt;text-pattern-transclude-strm&gt;] -[is[current]] -[is[system]] -[all[shadows]] -[is[image]]\&quot;\n    class:\&quot;filtertransclude\&quot;\n  &gt;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/tags\&quot;\n    filter:\&quot;[all[current]tagging[]] -[is[current]] -[is[system]] -[all[shadows]]\&quot;\n    class:\&quot;filtertag\&quot;\n  &gt;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/backlinks\&quot;\n    filter:\&quot;[all[current]backlinks[]] [regexp:text&lt;text-pattern-backlink&gt;] -[is[current]] -[is[system]] -[all[shadows]] -[is[image]]\&quot;\n    class:\&quot;filterbacklink\&quot;\n  &gt;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/mentions-title\&quot;\n    filter:\&quot;[regexp:title&lt;text-pattern&gt;] -[has[parent]] -[is[current]] -[is[system]] -[all[shadows]]\&quot;\n    class:\&quot;filtertitle\&quot;\n  &gt;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/mentions-text\&quot;\n    filter:\&quot;[regexp:text&lt;text-pattern&gt;] -[is[current]] -[is[system]] -[all[shadows]] -[is[image]] -[regexp:text&lt;text-pattern-transclude&gt;] -[regexp:text&lt;text-pattern-transclude-strm&gt;] -[all[current]backlinks[]] -[regexp:text&lt;text-pattern-backlink&gt;] -[regexp:text&lt;text-pattern-reference&gt;]\&quot;\n    class:\&quot;filtertext\&quot;\n  &gt;&gt;\n&lt;/ul&gt;&quot;,
             &quot;title&quot;: &quot;$:/plugins/kebi/tiddlystudy-references/filters&quot;,
             &quot;tags&quot;: &quot;$:/tags/ViewTemplate $:/tags/Macro&quot;,
-            &quot;modified&quot;: &quot;20210315171456565&quot;
+            &quot;modified&quot;: &quot;20210317094809378&quot;
         },
         &quot;$:/plugins/kebi/tiddlystudy-references/filters-node&quot;: {
             &quot;created&quot;: &quot;20201013104343021&quot;,
-            &quot;text&quot;: &quot;\\whitespace trim\n&lt;ul class=\&quot;footer footer-node\&quot;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/node/transclusions\&quot;\n    filter:\&quot;[regexp:text&lt;text-pattern-transclude&gt;] -[is[current]] -[is[system]] -[all[shadows]]\&quot;\n    class:\&quot;filtertransclude\&quot;\n  &gt;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/node/tags\&quot;\n    filter:\&quot;[all[current]tagging[]] -[is[current]] -[is[system]] -[all[shadows]]\&quot;\n    class:\&quot;filtertag\&quot;\n  &gt;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/node/backlinks\&quot;\n    filter:\&quot;[all[current]backlinks[]] [regexp:text&lt;text-pattern-backlink&gt;] -[is[current]] -[is[system]] -[all[shadows]]\&quot;\n    class:\&quot;filterbacklink\&quot;\n  &gt;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/node/mentions-title\&quot;\n    filter:\&quot;[regexp:title&lt;text-pattern&gt;] -[regexp:title&lt;text-pattern-node-title&gt;] -[is[current]] -[is[system]] -[all[shadows]]\&quot;\n    class:\&quot;filtertitle\&quot;\n  &gt;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/node/mentions-text\&quot;\n    filter:\&quot;[regexp:text&lt;text-pattern&gt;] -[is[current]] -[is[system]] -[all[shadows]] -[all[current]backlinks[]] -[regexp:text&lt;text-pattern-backlink&gt;] -[regexp:text&lt;text-pattern-transclude&gt;] -[regexp:text&lt;text-pattern-reference&gt;]\&quot;\n    class:\&quot;filtertext\&quot;\n  &gt;&gt;\n&lt;/ul&gt;&quot;,
+            &quot;text&quot;: &quot;\\whitespace trim\n&lt;ul class=\&quot;footer footer-node\&quot;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/node/transclusions\&quot;\n    filter:\&quot;[regexp:text&lt;text-pattern-transclude&gt;] [regexp:text&lt;text-pattern-transclude-strm&gt;] -[is[current]] -[is[system]] -[all[shadows]] -[is[image]]\&quot;\n    class:\&quot;filtertransclude\&quot;\n  &gt;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/node/tags\&quot;\n    filter:\&quot;[all[current]tagging[]] -[is[current]] -[is[system]] -[all[shadows]]\&quot;\n    class:\&quot;filtertag\&quot;\n  &gt;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/node/backlinks\&quot;\n    filter:\&quot;[all[current]backlinks[]] [regexp:text&lt;text-pattern-backlink&gt;] -[is[current]] -[is[system]] -[all[shadows]] -[is[image]]\&quot;\n    class:\&quot;filterbacklink\&quot;\n  &gt;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/node/mentions-title\&quot;\n    filter:\&quot;[regexp:title&lt;text-pattern&gt;] -[has[parent]] -[is[current]] -[is[system]] -[all[shadows]]\&quot;\n    class:\&quot;filtertitle\&quot;\n  &gt;&gt;\n  &lt;&lt;generate-list\n    statetiddler:\&quot;$:/plugins/kebi/tiddlystudy-references/config/filters/node/mentions-text\&quot;\n    filter:\&quot;[regexp:text&lt;text-pattern&gt;] -[is[current]] -[is[system]] -[all[shadows]] -[is[image]] -[regexp:text&lt;text-pattern-transclude&gt;] -[regexp:text&lt;text-pattern-transclude-strm&gt;] -[all[current]backlinks[]] -[regexp:text&lt;text-pattern-backlink&gt;] -[regexp:text&lt;text-pattern-reference&gt;]\&quot;\n    class:\&quot;filtertext\&quot;\n  &gt;&gt;\n&lt;/ul&gt;&quot;,
             &quot;title&quot;: &quot;$:/plugins/kebi/tiddlystudy-references/filters-node&quot;,
-            &quot;modified&quot;: &quot;20210315171522281&quot;
+            &quot;modified&quot;: &quot;20210317094823414&quot;
         },
         &quot;$:/plugins/kebi/tiddlystudy-references/config/filters/mentions-title&quot;: {
             &quot;created&quot;: &quot;20201013072614607&quot;,
@@ -11396,7 +11409,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div author="Roman Veselý" bag="default" core-version="&gt;=5.0.8" created="20210315164803498" dependents="" description="Horizontal Story River" list="readme settings" modified="20210316101720496" name="Krystal (tiddlystudy)" plugin-type="plugin" revision="0" source="https://github.com/crazko/krystal" title="$:/plugins/rmnvsl/krystal" type="application/json" version="0.3.4">
+<div author="Roman Veselý" bag="default" core-version="&gt;=5.0.8" created="20210315164803498" dependents="" description="Horizontal Story River" list="readme settings" modified="20210317110404586" name="Krystal (tiddlystudy)" plugin-type="plugin" revision="0" source="https://github.com/crazko/krystal" title="$:/plugins/rmnvsl/krystal" type="application/json" version="0.3.4">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/plugins/rmnvsl/krystal/buttons/maximize&quot;: {
@@ -11490,10 +11503,12 @@ Error message and password prompt
             &quot;tags&quot;: &quot;$:/tags/Stylesheet&quot;
         },
         &quot;$:/plugins/rmnvsl/krystal/search&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/rmnvsl/krystal/search&quot;,
-            &quot;tags&quot;: &quot;$:/plugins/rmnvsl/krystal/header&quot;,
+            &quot;text&quot;: &quot;{{$:/plugins/kebi/tiddlystudy/search/topbar}}&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;{{$:/core/ui/SideBarSegments/search}}&quot;
+            &quot;title&quot;: &quot;$:/plugins/rmnvsl/krystal/search&quot;,
+            &quot;tags&quot;: &quot;$:/plugins/rmnvsl/krystal/header tiddlystudy&quot;,
+            &quot;modified&quot;: &quot;20210317100939528&quot;,
+            &quot;created&quot;: &quot;20210317100933213&quot;
         },
         &quot;$:/plugins/rmnvsl/krystal/settings&quot;: {
             &quot;title&quot;: &quot;$:/plugins/rmnvsl/krystal/settings&quot;,
@@ -12408,37 +12423,46 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20210315170015931" modified="20210315202300631" title="$:/state/advancedsearch/currentTab">
-<pre>$:/core/ui/AdvancedSearch/Shadows</pre>
+<div created="20210315170015931" modified="20210317120810425" title="$:/state/advancedsearch/currentTab">
+<pre>$:/plugins/kebi/tiddlystudy/search/nodes</pre>
 </div>
 <div created="20210315170858958" modified="20210315170904829" title="$:/state/plugin-info--13644322-$:/plugins/sq/streams---1916247561">
 <pre>Settings</pre>
 </div>
-<div created="20210315162501148" modified="20210315162519763" title="$:/state/plugin-info--896887961-$:/plugins/flibbles/relink">
+<div created="20210317110428960" modified="20210317110430448" title="$:/state/plugin-info--896887961-$:/core">
 <pre>no</pre>
 </div>
-<div created="20210315162502436" modified="20210315162518996" title="$:/state/plugin-info--896887961-$:/plugins/flibbles/relink---548854025">
+<div created="20210315162501148" modified="20210317110449392" title="$:/state/plugin-info--896887961-$:/plugins/flibbles/relink">
+<pre>no</pre>
+</div>
+<div created="20210315162502436" modified="20210317110447432" title="$:/state/plugin-info--896887961-$:/plugins/flibbles/relink---548854025">
 <pre>readme</pre>
 </div>
-<div created="20210315162527708" modified="20210316100748400" title="$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy">
+<div created="20210317120724567" modified="20210317120729315" title="$:/state/plugin-info--896887961-$:/plugins/flibbles/relink-titles">
 <pre>no</pre>
 </div>
-<div created="20210315170822225" modified="20210316101019491" title="$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy-references">
+<div created="20210317120726211" modified="20210317120728367" title="$:/state/plugin-info--896887961-$:/plugins/flibbles/relink-titles---174060577">
+<pre>readme</pre>
+</div>
+<div created="20210315162527708" modified="20210317120734478" title="$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy">
 <pre>no</pre>
 </div>
-<div created="20210315170826482" modified="20210316100952478" title="$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy-references--1748746176">
-<pre>contents</pre>
+<div created="20210315170822225" modified="20210317120756455" title="$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy-references">
+<pre>no</pre>
 </div>
-<div created="20210315164631714" modified="20210316101709719" title="$:/state/plugin-info--896887961-$:/plugins/rmnvsl/krystal">
+<div created="20210315170826482" modified="20210317120754522" title="$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy-references--1748746176">
+<pre>config</pre>
+</div>
+<div created="20210315164631714" modified="20210317120859537" title="$:/state/plugin-info--896887961-$:/plugins/rmnvsl/krystal">
 <pre>no</pre>
 </div>
 <div created="20210315164900979" modified="20210315164900979" title="$:/state/plugin-info--896887961-$:/plugins/rmnvsl/krystal (tiddlystudy)">
 <pre>yes</pre>
 </div>
-<div created="20210315164633155" modified="20210316101707799" title="$:/state/plugin-info--896887961-$:/plugins/rmnvsl/krystal--627067479">
+<div created="20210315164633155" modified="20210317120858282" title="$:/state/plugin-info--896887961-$:/plugins/rmnvsl/krystal--627067479">
 <pre>readme</pre>
 </div>
-<div created="20210315165124267" modified="20210315165127507" title="$:/state/plugin-info--896887961-$:/plugins/sobjornstad/TiddlyRemember">
+<div created="20210315165124267" modified="20210317120923257" title="$:/state/plugin-info--896887961-$:/plugins/sobjornstad/TiddlyRemember">
 <pre>no</pre>
 </div>
 <div created="20210315164820444" modified="20210315164827594" title="$:/state/plugin-info--896887961-$:/plugins/sobjornstad/TiddlyRemember (tiddlystudy)">
@@ -12447,14 +12471,14 @@ Error message and password prompt
 <div created="20210315164821858" modified="20210315164821858" title="$:/state/plugin-info--896887961-$:/plugins/sobjornstad/TiddlyRemember (tiddlystudy)---689306171">
 <pre>contents</pre>
 </div>
-<div created="20210315165125691" modified="20210315165126595" title="$:/state/plugin-info--896887961-$:/plugins/sobjornstad/TiddlyRemember--1995315215">
+<div created="20210315165125691" modified="20210317120921777" title="$:/state/plugin-info--896887961-$:/plugins/sobjornstad/TiddlyRemember--1995315215">
 <pre>readme</pre>
 </div>
-<div created="20210315165245060" modified="20210315165318100" title="$:/state/plugin-info--896887961-$:/plugins/sq/streams">
+<div created="20210315165245060" modified="20210317120722585" title="$:/state/plugin-info--896887961-$:/plugins/sq/streams">
 <pre>no</pre>
 </div>
-<div created="20210315165245955" modified="20210315165316091" title="$:/state/plugin-info--896887961-$:/plugins/sq/streams---1728276928">
-<pre>Settings</pre>
+<div created="20210315165245955" modified="20210317120719065" title="$:/state/plugin-info--896887961-$:/plugins/sq/streams---1728276928">
+<pre>contents</pre>
 </div>
 <div created="20210315162456468" modified="20210315163624832" title="$:/state/plugin-info-1276002622-$:/plugins/kebi/tiddlystudy">
 <pre>no</pre>
@@ -12465,14 +12489,14 @@ Error message and password prompt
 <div created="20210315170939758" modified="20210315171008727" title="$:/state/plugin-info-1488554532-$:/plugins/kebi/tiddlystudy-references--213090685">
 <pre>config</pre>
 </div>
-<div created="20210316094503341" modified="20210316094503341" title="$:/state/sq/streams/current-edit-tiddler--1456228637">
-<pre>New Tiddler 1</pre>
+<div created="20210317094649145" modified="20210317094649145" title="$:/state/sq/streams/current-edit-tiddler--30666222">
+<pre>New Tiddler/20210317093048292</pre>
 </div>
 <div created="20210315170135365" modified="20210315170137317" title="$:/state/streams/settings/tabs-1976991403">
 <pre>$:/plugins/sq/streams/Settings/config</pre>
 </div>
-<div created="20210315170015932" modified="20210315202300633" title="$:/state/tab--1498284803">
-<pre>$:/core/ui/AdvancedSearch/Shadows</pre>
+<div created="20210315170015932" modified="20210317120810425" title="$:/state/tab--1498284803">
+<pre>$:/plugins/kebi/tiddlystudy/search/nodes</pre>
 </div>
 <div created="20210315165942355" modified="20210316101814568" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Palette</pre>
@@ -12480,10 +12504,10 @@ Error message and password prompt
 <div created="20210315164524339" modified="20210315164525162" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
-<div created="20210315162506380" modified="20210315162518508" title="$:/state/tab--824315756">
+<div created="20210315162506380" modified="20210317110444664" title="$:/state/tab--824315756">
 <pre>$:/plugins/flibbles/relink/ui/configuration/Attributes</pre>
 </div>
-<div created="20210315162459051" modified="20210316101815844" title="$:/state/tab-1749438307">
+<div created="20210315162459051" modified="20210317120924665" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20210315165956371" modified="20210316101813941" title="$:/state/tabs/controlpanel/toolbars-1345989671">
@@ -12495,7 +12519,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210316101759725" list="GettingStarted" modified="20210316101759725" title="$:/StoryList">
+<div created="20210317120806322" list="GettingStarted" modified="20210317120838650" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210315183128677" list="$:/plugins/kebi/tiddlystudy/search/nodes $:/core/ui/AdvancedSearch/Standard $:/core/ui/AdvancedSearch/System $:/core/ui/AdvancedSearch/Shadows $:/core/ui/AdvancedSearch/Filter" modified="20210315183153068" title="$:/tags/AdvancedSearch">
