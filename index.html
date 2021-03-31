@@ -161,6 +161,8 @@ Error message and password prompt
 
 <li>$:/isEncrypted</li>
 
+<li>$:/palette</li>
+
 <li>$:/plugins/flibbles/relink</li>
 
 <li>$:/plugins/flibbles/relink-titles</li>
@@ -176,6 +178,10 @@ Error message and password prompt
 <li>$:/plugins/sq/streams</li>
 
 <li>$:/state/advancedsearch/currentTab</li>
+
+<li>$:/state/dropdown/keyboardshortcut/image-html-286565879</li>
+
+<li>$:/state/dropdown/keyboardshortcut/rememberq-reference-286565879</li>
 
 <li>$:/state/editpreviewtype</li>
 
@@ -198,6 +204,12 @@ Error message and password prompt
 <li>$:/state/plugin-info--896887961-$:/plugins/sq/streams</li>
 
 <li>$:/state/plugin-info--896887961-$:/plugins/sq/streams---1728276928</li>
+
+<li>$:/state/plugin-info-1276002622-$:/plugins/kebi/tiddlystudy</li>
+
+<li>$:/state/plugin-info-817766142-$:/plugins/sobjornstad/TiddlyRemember</li>
+
+<li>$:/state/plugin-info-817766142-$:/plugins/sobjornstad/TiddlyRemember--966567334</li>
 
 <li>$:/state/search-list/selected-item--1218276980</li>
 
@@ -264,6 +276,8 @@ Error message and password prompt
 <li>New Tiddler/20210326152226484</li>
 
 <li>New Tiddler/20210326152445984</li>
+
+<li>New Tiddler/20210331141112197</li>
 
 </ul>
 </p>
@@ -10205,6 +10219,9 @@ $button$
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
+<div created="20210331140449007" modified="20210331140520466" title="$:/palette">
+<pre>$:/palettes/Vanilla</pre>
+</div>
 <div author="Flibbles" core-version="&gt;=5.1.14" created="20210201022024210" demo="http://flibbles.github.io/tw5-relink/" dependents="" description="Flexibility when relinking renamed tiddlers" list="readme configuration license" name="Relink" plugin-type="plugin" source="https://github.com/flibbles/tw5-relink" title="$:/plugins/flibbles/relink" type="application/json" version="1.10.3">
 <pre>{
     &quot;tiddlers&quot;: {
@@ -11072,7 +11089,7 @@ $button$
     }
 }</pre>
 </div>
-<div created="20210315161701535" description="core" modified="20210326144124815" name="tiddlystudy" plugin-type="plugin" tags="" title="$:/plugins/kebi/tiddlystudy" type="application/json" version="1.0.0">
+<div created="20210315161701535" description="core" modified="20210331141059040" name="tiddlystudy" plugin-type="plugin" tags="" title="$:/plugins/kebi/tiddlystudy" type="application/json" version="1.0.0">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/_Styles&quot;: {
@@ -11155,42 +11172,6 @@ $button$
             &quot;modified&quot;: &quot;20200905061935896&quot;,
             &quot;created&quot;: &quot;20200820044636487&quot;
         },
-        &quot;$:/config/shortcuts-mac/backlink&quot;: {
-            &quot;text&quot;: &quot;shift-cmd-L&quot;,
-            &quot;title&quot;: &quot;$:/config/shortcuts-mac/backlink&quot;,
-            &quot;modified&quot;: &quot;20200905061924555&quot;,
-            &quot;created&quot;: &quot;20200827140457314&quot;
-        },
-        &quot;$:/config/shortcuts-mac/image-html&quot;: {
-            &quot;text&quot;: &quot;shift-cmd-H&quot;,
-            &quot;title&quot;: &quot;$:/config/shortcuts-mac/image-html&quot;,
-            &quot;modified&quot;: &quot;20200905062245482&quot;,
-            &quot;created&quot;: &quot;20200827140547542&quot;
-        },
-        &quot;$:/config/shortcuts-mac/transclude&quot;: {
-            &quot;text&quot;: &quot;shift-cmd-T&quot;,
-            &quot;title&quot;: &quot;$:/config/shortcuts-mac/transclude&quot;,
-            &quot;modified&quot;: &quot;20200905062221143&quot;,
-            &quot;created&quot;: &quot;20200827140722400&quot;
-        },
-        &quot;$:/config/shortcuts-not-mac/transclude&quot;: {
-            &quot;text&quot;: &quot;ctrl-shift-T&quot;,
-            &quot;title&quot;: &quot;$:/config/shortcuts-not-mac/transclude&quot;,
-            &quot;modified&quot;: &quot;20200905062448908&quot;,
-            &quot;created&quot;: &quot;20200827140727971&quot;
-        },
-        &quot;$:/config/shortcuts-not-mac/backlink&quot;: {
-            &quot;text&quot;: &quot;ctrl-shift-L&quot;,
-            &quot;title&quot;: &quot;$:/config/shortcuts-not-mac/backlink&quot;,
-            &quot;modified&quot;: &quot;20200905062209851&quot;,
-            &quot;created&quot;: &quot;20200827140502339&quot;
-        },
-        &quot;$:/config/shortcuts-not-mac/image-html&quot;: {
-            &quot;text&quot;: &quot;ctrl-shift-H&quot;,
-            &quot;title&quot;: &quot;$:/config/shortcuts-not-mac/image-html&quot;,
-            &quot;modified&quot;: &quot;20200905062430717&quot;,
-            &quot;created&quot;: &quot;20200827140553449&quot;
-        },
         &quot;$:/core/ui/EditorToolbar/linkify&quot;: {
             &quot;created&quot;: &quot;20200906045749947&quot;,
             &quot;title&quot;: &quot;$:/core/ui/EditorToolbar/linkify&quot;,
@@ -11270,19 +11251,37 @@ $button$
             &quot;modified&quot;: &quot;20210315200722820&quot;
         },
         &quot;.strm&quot;: {
-            &quot;created&quot;: &quot;20210317085701784&quot;,
-            &quot;text&quot;: &quot;&lt;div style=\&quot;border-radius: 7.5px; padding: 1em 1.5em; background-color: #eff5e5 !important\&quot;&gt;\n&lt;$link&gt;{{!!title}}&lt;/$link&gt;\n{{||$:/core/ui/ViewTemplate/tags}}\n{{!!text}}\n{{||$:/plugins/sq/streams/stream-view-template}}\n&lt;/div&gt;&quot;,
-            &quot;tags&quot;: &quot;&quot;,
+            &quot;text&quot;: &quot;&lt;div class=\&quot;transcludify\&quot;&gt;\n&lt;$link&gt;{{!!title}}&lt;/$link&gt;\n{{||$:/core/ui/ViewTemplate/tags}}\n{{!!text}}\n{{||$:/plugins/sq/streams/stream-view-template}}\n&lt;/div&gt;&quot;,
             &quot;title&quot;: &quot;.strm&quot;,
-            &quot;modified&quot;: &quot;20210317092313417&quot;
+            &quot;tags&quot;: &quot;&quot;,
+            &quot;modified&quot;: &quot;20210331140226399&quot;,
+            &quot;created&quot;: &quot;20210317085701784&quot;
         },
-        &quot;$:/plugins/kebi/tiddlystudy/search/css&quot;: {
+        &quot;$:/config/shortcuts/transclude&quot;: {
+            &quot;created&quot;: &quot;20200827140727971&quot;,
+            &quot;text&quot;: &quot;ctrl-shift-T&quot;,
+            &quot;title&quot;: &quot;$:/config/shortcuts/transclude&quot;,
+            &quot;modified&quot;: &quot;20210331134613650&quot;
+        },
+        &quot;$:/config/shortcuts/image-html&quot;: {
+            &quot;created&quot;: &quot;20200827140553449&quot;,
+            &quot;text&quot;: &quot;ctrl-shift-H&quot;,
+            &quot;title&quot;: &quot;$:/config/shortcuts/image-html&quot;,
+            &quot;modified&quot;: &quot;20210331134601328&quot;
+        },
+        &quot;$:/config/shortcuts/backlink&quot;: {
+            &quot;created&quot;: &quot;20200827140502339&quot;,
+            &quot;text&quot;: &quot;ctrl-shift-L&quot;,
+            &quot;title&quot;: &quot;$:/config/shortcuts/backlink&quot;,
+            &quot;modified&quot;: &quot;20210331134537837&quot;
+        },
+        &quot;$:/plugins/kebi/tiddlystudy/css&quot;: {
             &quot;created&quot;: &quot;20140529162823729&quot;,
-            &quot;text&quot;: &quot;.matched{color: orange;}\n.tw-context {\nmargin-top: 0;\nmargin-bottom: 0;\n/*border:1px solid; word-break: break-all; word-wrap: break-word*/\n}&quot;,
-            &quot;type&quot;: &quot;text/css&quot;,
-            &quot;title&quot;: &quot;$:/plugins/kebi/tiddlystudy/search/css&quot;,
+            &quot;text&quot;: &quot;.matched{\n\tcolor: orange;\n}\n\n.tw-context {\n\tmargin-top: 0;\n\tmargin-bottom: 0;\n}\n\n.transcludify {\n\tborder-radius: 7.5px;\n\tpadding: 1em 1.5em;\n\tbackground-color: &lt;&lt;colour message-background&gt;&gt;;\n}&quot;,
+            &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
+            &quot;title&quot;: &quot;$:/plugins/kebi/tiddlystudy/css&quot;,
             &quot;tags&quot;: &quot;$:/tags/Stylesheet&quot;,
-            &quot;modified&quot;: &quot;20210326105614602&quot;
+            &quot;modified&quot;: &quot;20210331140938957&quot;
         }
     }
 }</pre>
@@ -11623,7 +11622,7 @@ $button$
     }
 }</pre>
 </div>
-<div author="Soren Bjornstad" core-version="&gt;=5.1.21" created="20201226090724450" dependents="" description="TiddlyRemember: Embed Anki notes in your TiddlyWiki" list="readme license" modified="20210315165117219" name="TiddlyRemember (tiddlystudy)" plugin-type="plugin" source="https://github.com/sobjornstad/TiddlyRemember" title="$:/plugins/sobjornstad/TiddlyRemember" type="application/json" version="1.2.2">
+<div author="Soren Bjornstad" core-version="&gt;=5.1.21" created="20201226090724450" dependents="" description="TiddlyRemember: Embed Anki notes in your TiddlyWiki" list="readme license" modified="20210331134445043" name="TiddlyRemember (tiddlystudy)" plugin-type="plugin" source="https://github.com/sobjornstad/TiddlyRemember" title="$:/plugins/sobjornstad/TiddlyRemember" type="application/json" version="1.2.2">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/config/TiddlyRemember/DeckMapping&quot;: {
@@ -11816,27 +11815,6 @@ $button$
             &quot;modified&quot;: &quot;20210315095631620&quot;,
             &quot;created&quot;: &quot;20200926193600000&quot;
         },
-        &quot;$:/config/shortcuts-mac/rememberq&quot;: {
-            &quot;text&quot;: &quot;shift-cmd-Period&quot;,
-            &quot;title&quot;: &quot;$:/config/shortcuts-mac/rememberq&quot;,
-            &quot;tags&quot;: &quot;tiddlystudy&quot;,
-            &quot;modified&quot;: &quot;20210315095634268&quot;,
-            &quot;created&quot;: &quot;20200930122331510&quot;
-        },
-        &quot;$:/config/shortcuts-mac/remembercz&quot;: {
-            &quot;text&quot;: &quot;shift-cmd-Comma&quot;,
-            &quot;title&quot;: &quot;$:/config/shortcuts-mac/remembercz&quot;,
-            &quot;tags&quot;: &quot;tiddlystudy&quot;,
-            &quot;modified&quot;: &quot;20210315095637243&quot;,
-            &quot;created&quot;: &quot;20200930122301839&quot;
-        },
-        &quot;$:/config/shortcuts-mac/remembercz-reference&quot;: {
-            &quot;text&quot;: &quot;alt-cmd-Comma&quot;,
-            &quot;title&quot;: &quot;$:/config/shortcuts-mac/remembercz-reference&quot;,
-            &quot;tags&quot;: &quot;tiddlystudy&quot;,
-            &quot;modified&quot;: &quot;20210315095639539&quot;,
-            &quot;created&quot;: &quot;20200930122348693&quot;
-        },
         &quot;$:/config/shortcuts/remembercz-reference&quot;: {
             &quot;text&quot;: &quot;ctrl-alt-Comma&quot;,
             &quot;title&quot;: &quot;$:/config/shortcuts/remembercz-reference&quot;,
@@ -11850,13 +11828,6 @@ $button$
             &quot;tags&quot;: &quot;tiddlystudy&quot;,
             &quot;modified&quot;: &quot;20210315095601436&quot;,
             &quot;created&quot;: &quot;20200930122432806&quot;
-        },
-        &quot;$:/config/shortcuts-mac/rememberq-reference&quot;: {
-            &quot;text&quot;: &quot;alt-cmd-Period&quot;,
-            &quot;title&quot;: &quot;$:/config/shortcuts-mac/rememberq-reference&quot;,
-            &quot;tags&quot;: &quot;tiddlystudy&quot;,
-            &quot;modified&quot;: &quot;20210315095644788&quot;,
-            &quot;created&quot;: &quot;20200930122438296&quot;
         }
     }
 }</pre>
@@ -12456,8 +12427,14 @@ $button$
     }
 }</pre>
 </div>
-<div created="20210326145737407" modified="20210329153654180" title="$:/state/advancedsearch/currentTab">
-<pre>$:/core/ui/AdvancedSearch/Standard</pre>
+<div created="20210326145737407" modified="20210331140557812" title="$:/state/advancedsearch/currentTab">
+<pre>$:/core/ui/AdvancedSearch/Shadows</pre>
+</div>
+<div created="20210331134328838" modified="20210331134400325" title="$:/state/dropdown/keyboardshortcut/image-html-286565879">
+<pre>close</pre>
+</div>
+<div created="20210331134351829" modified="20210331134352678" title="$:/state/dropdown/keyboardshortcut/rememberq-reference-286565879">
+<pre>close</pre>
 </div>
 <div created="20210327132325504" modified="20210327132325505" title="$:/state/editpreviewtype">
 <pre>$:/core/ui/EditTemplate/body/preview/output</pre>
@@ -12471,7 +12448,7 @@ $button$
 <div created="20210326144727663" modified="20210329154236493" title="$:/state/plugin-info--270617185-$:/themes/nico/notebook---932240941">
 <pre>LICENSE</pre>
 </div>
-<div created="20210326151621232" modified="20210329154144522" title="$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy">
+<div created="20210326151621232" modified="20210331141002365" title="$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy">
 <pre>no</pre>
 </div>
 <div created="20210326150837123" modified="20210329154222590" title="$:/state/plugin-info--896887961-$:/plugins/rmnvsl/krystal">
@@ -12480,10 +12457,10 @@ $button$
 <div created="20210326150838197" modified="20210329154221405" title="$:/state/plugin-info--896887961-$:/plugins/rmnvsl/krystal--627067479">
 <pre>readme</pre>
 </div>
-<div created="20210329154146421" modified="20210329154156037" title="$:/state/plugin-info--896887961-$:/plugins/sobjornstad/TiddlyRemember">
+<div created="20210329154146421" modified="20210331134549926" title="$:/state/plugin-info--896887961-$:/plugins/sobjornstad/TiddlyRemember">
 <pre>no</pre>
 </div>
-<div created="20210329154147933" modified="20210329154155102" title="$:/state/plugin-info--896887961-$:/plugins/sobjornstad/TiddlyRemember--1995315215">
+<div created="20210329154147933" modified="20210331134548573" title="$:/state/plugin-info--896887961-$:/plugins/sobjornstad/TiddlyRemember--1995315215">
 <pre>readme</pre>
 </div>
 <div created="20210326150851003" modified="20210329154211270" title="$:/state/plugin-info--896887961-$:/plugins/sq/streams">
@@ -12492,11 +12469,20 @@ $button$
 <div created="20210326150852480" modified="20210329154210027" title="$:/state/plugin-info--896887961-$:/plugins/sq/streams---1728276928">
 <pre>Settings</pre>
 </div>
+<div created="20210331141045101" modified="20210331141045101" title="$:/state/plugin-info-1276002622-$:/plugins/kebi/tiddlystudy">
+<pre>no</pre>
+</div>
+<div created="20210331134419613" modified="20210331134419613" title="$:/state/plugin-info-817766142-$:/plugins/sobjornstad/TiddlyRemember">
+<pre>no</pre>
+</div>
+<div created="20210331134234517" modified="20210331134418240" title="$:/state/plugin-info-817766142-$:/plugins/sobjornstad/TiddlyRemember--966567334">
+<pre>readme</pre>
+</div>
 <div created="20210326155355998" modified="20210326155358338" title="$:/state/search-list/selected-item--1218276980">
 <pre>New Tiddler/20210326152035362-secondaryList</pre>
 </div>
-<div created="20210326144549882" modified="20210326162958576" title="$:/state/ShowPaletteEditor">
-<pre>yes</pre>
+<div created="20210326144549882" modified="20210331140956605" title="$:/state/ShowPaletteEditor">
+<pre>no</pre>
 </div>
 <div created="20210326151718220" modified="20210326151736974" title="$:/state/sq/streams/current-edit-tiddler--1059947552">
 <pre>tiddlystudy/20210326151736972</pre>
@@ -12510,16 +12496,16 @@ $button$
 <div created="20210326150458005" modified="20210326151732778" title="$:/state/streams/settings/tabs-1976991403">
 <pre>$:/plugins/sq/streams/Settings/config</pre>
 </div>
-<div created="20210326145737408" modified="20210329153654181" title="$:/state/tab--1498284803">
-<pre>$:/core/ui/AdvancedSearch/Standard</pre>
+<div created="20210326145737408" modified="20210331140557813" title="$:/state/tab--1498284803">
+<pre>$:/core/ui/AdvancedSearch/Shadows</pre>
 </div>
 <div created="20210326144532926" modified="20210326160948306" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Palette</pre>
 </div>
-<div created="20210326144720834" modified="20210329154223719" title="$:/state/tab--86143343">
-<pre>$:/core/ui/ControlPanel/Plugins/Installed/Themes</pre>
+<div created="20210326144720834" modified="20210331134126084" title="$:/state/tab--86143343">
+<pre>$:/core/ui/ControlPanel/Plugins/Installed/Plugins</pre>
 </div>
-<div created="20210326144518509" modified="20210329154251805" title="$:/state/tab-1749438307">
+<div created="20210326144518509" modified="20210331141355846" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20210326145214287" modified="20210326145252929" title="$:/state/tabs/controlpanel/toolbars-1345989671">
@@ -12531,7 +12517,7 @@ $button$
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210329154134464" list="Library" modified="20210329154134464" title="$:/StoryList">
+<div list="Library [[New Tiddler]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210326145222949" list="$:/core/ui/Buttons/more-page-actions $:/core/ui/Buttons/save-wiki $:/core/ui/Buttons/control-panel $:/core/ui/Buttons/new-tiddler $:/core/ui/Buttons/home $:/core/ui/Buttons/close-all $:/core/ui/Buttons/fold-all $:/core/ui/Buttons/unfold-all $:/core/ui/Buttons/permaview $:/core/ui/Buttons/new-journal $:/core/ui/Buttons/new-image $:/core/ui/Buttons/import $:/core/ui/Buttons/export-page $:/core/ui/Buttons/advanced-search $:/core/ui/Buttons/manager $:/core/ui/Buttons/tag-manager $:/core/ui/Buttons/language $:/core/ui/Buttons/palette $:/core/ui/Buttons/theme $:/core/ui/Buttons/storyview $:/core/ui/Buttons/encryption $:/core/ui/Buttons/timestamp $:/core/ui/Buttons/full-screen $:/core/ui/Buttons/print $:/core/ui/Buttons/refresh" modified="20210326145244429" title="$:/tags/PageControls">
@@ -12750,7 +12736,7 @@ $button$
 &lt;&lt;toc-selective-expandable 'library' sort[title]&gt;&gt;
 &lt;/div&gt;</pre>
 </div>
-<div created="20210326151929534" modified="20210326152703667" stream-list="[[New Tiddler/20210326151940392]] [[New Tiddler/20210326151956688]] [[New Tiddler/20210326152016387]] [[New Tiddler/20210326152022193]] [[New Tiddler/20210326152158416]] [[New Tiddler/20210326152445984]] [[New Tiddler/20210326152226484]]" stream-type="default" tags="library" title="New Tiddler">
+<div created="20210326151929534" modified="20210331141112200" stream-list="[[New Tiddler/20210331141112197]] [[New Tiddler/20210326151940392]] [[New Tiddler/20210326151956688]] [[New Tiddler/20210326152016387]] [[New Tiddler/20210326152022193]] [[New Tiddler/20210326152158416]] [[New Tiddler/20210326152445984]] [[New Tiddler/20210326152226484]]" stream-type="default" tags="library" title="New Tiddler">
 <pre></pre>
 </div>
 <div created="20210326151940394" modified="20210326151957193" parent="New Tiddler" stream-list="[[New Tiddler/20210326151944029]] [[New Tiddler/20210326151952321]]" stream-type="default" title="New Tiddler/20210326151940392">
@@ -12794,6 +12780,11 @@ How old are you?
 </div>
 <div created="20210326152445986" modified="20210326152507268" parent="New Tiddler" stream-type="default" title="New Tiddler/20210326152445984">
 <pre>For all the functions visit the Keyboard Shortcuts tiddlywiki config page!</pre>
+</div>
+<div created="20210331141112199" modified="20210331141436186" parent="New Tiddler" stream-type="default" title="New Tiddler/20210331141112197">
+<pre>ATTENTION: THE STREAMS PLUGIN IS STILL IN ACTIVE DEVELOPMENT.
+
+BUGS AND CRASHES MAY HAPPEN SO MAKE SURE TO DISABLE IT IF YOU WANT TO USE TIDDLYSTUDY FOR IMPORTANT STUFF.</pre>
 </div>
 
 
