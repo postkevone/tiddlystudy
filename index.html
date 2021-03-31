@@ -47,7 +47,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title></title>
+<title>My TiddlyWiki — a non-linear personal web notebook</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~-->
 
 <!--~~ Raw markup ~~-->
@@ -149,6 +149,10 @@ Error message and password prompt
 
 <li>$:/config/Plugins/Disabled/$:/themes/nico/notebook</li>
 
+<li>$:/config/shortcuts-mac/remembercz-reference</li>
+
+<li>$:/config/shortcuts-mac/rememberq-reference</li>
+
 <li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/more-tiddler-actions</li>
 
 <li>$:/core</li>
@@ -158,6 +162,8 @@ Error message and password prompt
 <li>$:/core/ui/SideBar/Recent</li>
 
 <li>$:/DefaultTiddlers</li>
+
+<li>$:/Import</li>
 
 <li>$:/isEncrypted</li>
 
@@ -181,6 +187,12 @@ Error message and password prompt
 
 <li>$:/state/dropdown/keyboardshortcut/image-html-286565879</li>
 
+<li>$:/state/dropdown/keyboardshortcut/remembercz-286565879</li>
+
+<li>$:/state/dropdown/keyboardshortcut/remembercz-reference-286565879</li>
+
+<li>$:/state/dropdown/keyboardshortcut/rememberq-286565879</li>
+
 <li>$:/state/dropdown/keyboardshortcut/rememberq-reference-286565879</li>
 
 <li>$:/state/editpreviewtype</li>
@@ -192,6 +204,10 @@ Error message and password prompt
 <li>$:/state/plugin-info--270617185-$:/themes/nico/notebook---932240941</li>
 
 <li>$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy</li>
+
+<li>$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy-references</li>
+
+<li>$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy-references--1748746176</li>
 
 <li>$:/state/plugin-info--896887961-$:/plugins/rmnvsl/krystal</li>
 
@@ -304,6 +320,12 @@ Error message and password prompt
 </div>
 <div created="20210326150956006" modified="20210326151501891" title="$:/config/Plugins/Disabled/$:/themes/nico/notebook">
 <pre>no</pre>
+</div>
+<div created="20210331145205681" modified="20210331145527957" title="$:/config/shortcuts-mac/remembercz-reference">
+<pre></pre>
+</div>
+<div created="20210331145231303" modified="20210331145536269" title="$:/config/shortcuts-mac/rememberq-reference">
+<pre></pre>
 </div>
 <div created="20210326145210154" modified="20210326145211918" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/more-tiddler-actions">
 <pre>show</pre>
@@ -10216,6 +10238,11 @@ $button$
 <pre>Library
 [[New Tiddler]]</pre>
 </div>
+<div status="complete" title="$:/Import">
+<pre>The following tiddlers were imported:
+
+# [[$:/plugins/sobjornstad/TiddlyRemember]]</pre>
+</div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
@@ -11089,7 +11116,7 @@ $button$
     }
 }</pre>
 </div>
-<div created="20210315161701535" description="core" modified="20210331141059040" name="tiddlystudy" plugin-type="plugin" tags="" title="$:/plugins/kebi/tiddlystudy" type="application/json" version="1.0.0">
+<div created="20210315161701535" description="core" modified="20210331141059040" name="tiddlystudy" plugin-type="plugin" tags="" title="$:/plugins/kebi/tiddlystudy" type="application/json" version="1.0.4">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/_Styles&quot;: {
@@ -11154,24 +11181,6 @@ $button$
             &quot;title&quot;: &quot;$:/config/flibbles/relink/macros/rememberq/text&quot;,
             &quot;modified&quot;: &quot;20200905052646704&quot;
         },
-        &quot;$:/config/ShortcutInfo/backlink&quot;: {
-            &quot;text&quot;: &quot;Create a backlink&quot;,
-            &quot;title&quot;: &quot;$:/config/ShortcutInfo/backlink&quot;,
-            &quot;modified&quot;: &quot;20200905061235804&quot;,
-            &quot;created&quot;: &quot;20200816072659005&quot;
-        },
-        &quot;$:/config/ShortcutInfo/image-html&quot;: {
-            &quot;text&quot;: &quot;Insert an image (HTML) (Anki compatible)&quot;,
-            &quot;title&quot;: &quot;$:/config/ShortcutInfo/image-html&quot;,
-            &quot;modified&quot;: &quot;20200905061942356&quot;,
-            &quot;created&quot;: &quot;20200815091746791&quot;
-        },
-        &quot;$:/config/ShortcutInfo/transclude&quot;: {
-            &quot;text&quot;: &quot;Transclude a node&quot;,
-            &quot;title&quot;: &quot;$:/config/ShortcutInfo/transclude&quot;,
-            &quot;modified&quot;: &quot;20200905061935896&quot;,
-            &quot;created&quot;: &quot;20200820044636487&quot;
-        },
         &quot;$:/core/ui/EditorToolbar/linkify&quot;: {
             &quot;created&quot;: &quot;20200906045749947&quot;,
             &quot;title&quot;: &quot;$:/core/ui/EditorToolbar/linkify&quot;,
@@ -11215,18 +11224,6 @@ $button$
             &quot;title&quot;: &quot;$:/config/AnimationDuration&quot;,
             &quot;modified&quot;: &quot;20210315165722646&quot;
         },
-        &quot;$:/SiteSubtitle&quot;: {
-            &quot;text&quot;: &quot;&quot;,
-            &quot;title&quot;: &quot;$:/SiteSubtitle&quot;,
-            &quot;modified&quot;: &quot;20210315165530150&quot;,
-            &quot;created&quot;: &quot;20210315165530150&quot;
-        },
-        &quot;$:/SiteTitle&quot;: {
-            &quot;text&quot;: &quot;&quot;,
-            &quot;title&quot;: &quot;$:/SiteTitle&quot;,
-            &quot;modified&quot;: &quot;20210315165531379&quot;,
-            &quot;created&quot;: &quot;20210315165531379&quot;
-        },
         &quot;$:/plugins/kebi/tiddlystudy/search/context.js&quot;: {
             &quot;created&quot;: &quot;20140418153435777&quot;,
             &quot;text&quot;: &quot;/*\\\\\ntitle: $:/core/modules/widgets/danielo/context-widget.js\ntype: application/javascript\nmodule-type: widget\n\nEdit-text widget\n\n\\*/\n(function() {\n\n  /*jslint node: true, browser: true */\n  /*global $tw: false */\n  \&quot;use strict\&quot;;\n\n  var Widget = require(\&quot;$:/core/modules/widgets/widget.js\&quot;).widget;\n  var contextWidget = function(parseTreeNode, options) {\n    this.initialise(parseTreeNode, options);\n  };\n\n  /*\n  Inherit from the base widget class\n  */\n  contextWidget.prototype = new Widget();\n\n  /*\n  Render this widget into the DOM\n  */\n  contextWidget.prototype.render = function(parent, nextSibling) {\n    // Save the parent dom node\n    this.parentDomNode = parent;\n    // Compute our attributes\n    this.computeAttributes();\n    // Execute our logic\n    this.execute();\n\n    if (this.term) {\n      this.createRegexp();\n      var matches = this.executeRegexp();\n      if (matches.length &gt; 0) {\n        this.domNode = this.document.createElement(this.element);\n        this.domNode.className = \&quot;tw-context\&quot;;\n        this.composeResults(matches); //this appends to domNode        \n        // Insert element\n        parent.insertBefore(this.domNode, nextSibling);\n        this.renderChildren(this.domNode, null);\n        this.domNodes.push(this.domNode);\n      }\n    }\n\n  };\n\n  /*\n  Compute the internal state of the widget\n  */\n  contextWidget.prototype.execute = function() {\n    // Get the parameters from the attributes\n    this.matchedClass = this.getAttribute(\&quot;matchClass\&quot;, \&quot;matched\&quot;);\n    this.tiddler = this.getAttribute(\&quot;tiddler\&quot;, this.getVariable(\&quot;currentTiddler\&quot;));\n    this.term = this.getAttribute(\&quot;term\&quot;, this.getAttribute(\&quot;searchTerm\&quot;));\n    this.contextLength = this.getAttribute(\&quot;length\&quot;, 50);\n    this.before = this.getAttribute(\&quot;before\&quot;, this.contextLength);\n    this.after = this.getAttribute(\&quot;after\&quot;, this.contextLength);\n    this.maxMatches = this.getAttribute(\&quot;maxMatches\&quot;, 10);\n    this.element = this.getAttribute(\&quot;element\&quot;, \&quot;pre\&quot;);\n    this.makeChildWidgets();\n  };\n\n  /*Create the regular expression*/\n  contextWidget.prototype.createRegexp = function() {\n    /* removed \\\\w+ for asian languages */\n    var regString = \&quot;([\\\\s\\\\S]{0,#before#})?(#term#)([\\\\s\\\\S]{0,#after#})?\&quot;;\n    var regString = regString.replace(\&quot;#before#\&quot;, this.before).replace(\&quot;#term#\&quot;, $tw.utils.escapeRegExp(this.term)).replace(\&quot;#after#\&quot;, this.after);\n    this.regexp = new RegExp(regString, \&quot;ig\&quot;);\n    //console.log(regString);\n  };\n  /*\n  execute the regular expresion\n  */\n  contextWidget.prototype.executeRegexp = function() {\n    var text = this.wiki.getTiddlerText(this.tiddler),\n      match, results = new Array();\n    while ((match = this.regexp.exec(text)) &amp;&amp; (results.length &lt; this.maxMatches)) {\n      results.push(match)\n    }\n    //console.log(\&quot;matches\&quot;, results);\n    return results;\n  };\n\n  /*\n  compose the results\n  matches : array of match objects from regular expression execute\n  */\n  contextWidget.prototype.composeResults = function(matches) {\n    var result = [],\n      self = this,\n      node = this.domNode,\n      dots = textNode(\&quot;...\\n\&quot;),\n      span = matchedNode(this.term);\n\n    for (var i = 0; i &lt; matches.length; i++) {\n      processMatch(matches[i]);\n    }\n\n    function processMatch(match) {\n      if (match.index !== 0) node.appendChild(dots.cloneNode(true));\n      for (var i = 1; i &lt; match.length; i++) { //match[0] full matched text (all groups together)\n        if (match[i]) {\n          if (match[i].toLowerCase() == self.term.toLowerCase())\n            node.appendChild(match[i] == self.term ? span.cloneNode(true) : matchedNode(match[i]))\n          else\n            node.appendChild(textNode(match[i]))\n        }\n      }\n      if (match.index + match[0].length &lt; match.input.length) node.appendChild(dots.cloneNode(true));\n    }\n\n    function textNode(text) {\n      return self.document.createTextNode(text)\n    }\n\n    function matchedNode(text) {\n      var node = self.document.createElement(\&quot;span\&quot;);\n      node.appendChild(textNode(text));\n      node.className = self.matchedClass;\n      return node;\n    }\n\n  };\n  /*\n  Selectively refreshes the widget if needed. Returns true if the widget or any of its children needed re-rendering\n  */\n  contextWidget.prototype.refresh = function(changedTiddlers) {\n    var changedAttributes = this.computeAttributes();\n    if (changedAttributes.tiddler || changedAttributes.term || changedAttributes.length || changedAttributes.matchedClass) {\n      this.refreshSelf();\n      return true;\n    }\n    return this.refreshChildren(changedTiddlers);\n  };\n\n  exports.context = contextWidget;\n\n})();&quot;,
@@ -11237,18 +11234,6 @@ $button$
             &quot;modifier&quot;: &quot;danielo&quot;,
             &quot;modified&quot;: &quot;20210315172549183&quot;,
             &quot;creator&quot;: &quot;danielo&quot;
-        },
-        &quot;$:/config/Search/MinLength&quot;: {
-            &quot;created&quot;: &quot;20210315200557748&quot;,
-            &quot;text&quot;: &quot;1&quot;,
-            &quot;title&quot;: &quot;$:/config/Search/MinLength&quot;,
-            &quot;modified&quot;: &quot;20210315200601322&quot;
-        },
-        &quot;$:/core/wiki/title&quot;: {
-            &quot;created&quot;: &quot;20210315200657405&quot;,
-            &quot;text&quot;: &quot;{{$:/SiteTitle}}&quot;,
-            &quot;title&quot;: &quot;$:/core/wiki/title&quot;,
-            &quot;modified&quot;: &quot;20210315200722820&quot;
         },
         &quot;.strm&quot;: {
             &quot;text&quot;: &quot;&lt;div class=\&quot;transcludify\&quot;&gt;\n&lt;$link&gt;{{!!title}}&lt;/$link&gt;\n{{||$:/core/ui/ViewTemplate/tags}}\n{{!!text}}\n{{||$:/plugins/sq/streams/stream-view-template}}\n&lt;/div&gt;&quot;,
@@ -11435,7 +11420,7 @@ $button$
     }
 }</pre>
 </div>
-<div author="Roman Veselý" bag="default" core-version="&gt;=5.0.8" created="20210315164803498" dependents="" description="Horizontal Story River" list="readme settings" modified="20210326144024445" name="Krystal (tiddlystudy)" plugin-type="plugin" revision="0" source="https://github.com/crazko/krystal" title="$:/plugins/rmnvsl/krystal" type="application/json" version="0.3.4">
+<div author="Roman Veselý" bag="default" core-version="&gt;=5.0.8" created="20210315164803498" dependents="" description="Horizontal Story River" list="readme settings" modified="20210331144539757" name="Krystal (tiddlystudy)" plugin-type="plugin" revision="0" source="https://github.com/crazko/krystal" title="$:/plugins/rmnvsl/krystal" type="application/json" version="0.3.4">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/plugins/rmnvsl/krystal/buttons/maximize&quot;: {
@@ -11578,17 +11563,17 @@ $button$
             &quot;created&quot;: &quot;20210316101647609&quot;,
             &quot;text&quot;: &quot;&lt;div class=\&quot;tc-site-subtitle\&quot;&gt;\n\n&lt;$transclude tiddler=\&quot;$:/SiteSubtitle\&quot; mode=\&quot;inline\&quot;/&gt;\n\n&lt;/div&gt;\n&quot;,
             &quot;title&quot;: &quot;$:/core/ui/SideBarSegments/site-subtitle&quot;,
-            &quot;tags&quot;: &quot;$:/tags/SideBarSegment tiddlystudy&quot;,
+            &quot;tags&quot;: &quot;$:/tags/SideBarSegment $:/plugins/rmnvsl/krystal/header&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;modified&quot;: &quot;20210316101651782&quot;
+            &quot;modified&quot;: &quot;20210331144317662&quot;
         },
         &quot;$:/core/ui/SideBarSegments/site-title&quot;: {
             &quot;created&quot;: &quot;20210316101636763&quot;,
             &quot;text&quot;: &quot;&lt;h1 class=\&quot;tc-site-title\&quot;&gt;\n\n&lt;$transclude tiddler=\&quot;$:/SiteTitle\&quot; mode=\&quot;inline\&quot;/&gt;\n\n&lt;/h1&gt;\n&quot;,
             &quot;title&quot;: &quot;$:/core/ui/SideBarSegments/site-title&quot;,
-            &quot;tags&quot;: &quot;$:/tags/SideBarSegment tiddlystudy&quot;,
+            &quot;tags&quot;: &quot;$:/tags/SideBarSegment $:/plugins/rmnvsl/krystal/header&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;modified&quot;: &quot;20210316101640494&quot;
+            &quot;modified&quot;: &quot;20210331144350522&quot;
         },
         &quot;$:/core/ui/TopBar/menu&quot;: {
             &quot;title&quot;: &quot;$:/core/ui/TopBar/menu&quot;,
@@ -12433,7 +12418,16 @@ $button$
 <div created="20210331134328838" modified="20210331134400325" title="$:/state/dropdown/keyboardshortcut/image-html-286565879">
 <pre>close</pre>
 </div>
-<div created="20210331134351829" modified="20210331134352678" title="$:/state/dropdown/keyboardshortcut/rememberq-reference-286565879">
+<div created="20210331144717327" modified="20210331144718511" title="$:/state/dropdown/keyboardshortcut/remembercz-286565879">
+<pre>close</pre>
+</div>
+<div created="20210331145157704" modified="20210331145539613" title="$:/state/dropdown/keyboardshortcut/remembercz-reference-286565879">
+<pre>close</pre>
+</div>
+<div created="20210331144715542" modified="20210331144716543" title="$:/state/dropdown/keyboardshortcut/rememberq-286565879">
+<pre>close</pre>
+</div>
+<div created="20210331134351829" modified="20210331145538573" title="$:/state/dropdown/keyboardshortcut/rememberq-reference-286565879">
 <pre>close</pre>
 </div>
 <div created="20210327132325504" modified="20210327132325505" title="$:/state/editpreviewtype">
@@ -12448,19 +12442,25 @@ $button$
 <div created="20210326144727663" modified="20210329154236493" title="$:/state/plugin-info--270617185-$:/themes/nico/notebook---932240941">
 <pre>LICENSE</pre>
 </div>
-<div created="20210326151621232" modified="20210331141002365" title="$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy">
+<div created="20210326151621232" modified="20210331143432579" title="$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy">
 <pre>no</pre>
 </div>
-<div created="20210326150837123" modified="20210329154222590" title="$:/state/plugin-info--896887961-$:/plugins/rmnvsl/krystal">
+<div created="20210331143435347" modified="20210331143440899" title="$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy-references">
 <pre>no</pre>
 </div>
-<div created="20210326150838197" modified="20210329154221405" title="$:/state/plugin-info--896887961-$:/plugins/rmnvsl/krystal--627067479">
+<div created="20210331143436308" modified="20210331143439619" title="$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy-references--1748746176">
+<pre>config</pre>
+</div>
+<div created="20210326150837123" modified="20210331144816927" title="$:/state/plugin-info--896887961-$:/plugins/rmnvsl/krystal">
+<pre>no</pre>
+</div>
+<div created="20210326150838197" modified="20210331144816135" title="$:/state/plugin-info--896887961-$:/plugins/rmnvsl/krystal--627067479">
 <pre>readme</pre>
 </div>
-<div created="20210329154146421" modified="20210331134549926" title="$:/state/plugin-info--896887961-$:/plugins/sobjornstad/TiddlyRemember">
+<div created="20210329154146421" modified="20210331145858278" title="$:/state/plugin-info--896887961-$:/plugins/sobjornstad/TiddlyRemember">
 <pre>no</pre>
 </div>
-<div created="20210329154147933" modified="20210331134548573" title="$:/state/plugin-info--896887961-$:/plugins/sobjornstad/TiddlyRemember--1995315215">
+<div created="20210329154147933" modified="20210331145856703" title="$:/state/plugin-info--896887961-$:/plugins/sobjornstad/TiddlyRemember--1995315215">
 <pre>readme</pre>
 </div>
 <div created="20210326150851003" modified="20210329154211270" title="$:/state/plugin-info--896887961-$:/plugins/sq/streams">
@@ -12505,7 +12505,7 @@ $button$
 <div created="20210326144720834" modified="20210331134126084" title="$:/state/tab--86143343">
 <pre>$:/core/ui/ControlPanel/Plugins/Installed/Plugins</pre>
 </div>
-<div created="20210326144518509" modified="20210331141355846" title="$:/state/tab-1749438307">
+<div created="20210326144518509" modified="20210331145902526" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20210326145214287" modified="20210326145252929" title="$:/state/tabs/controlpanel/toolbars-1345989671">
@@ -12517,7 +12517,7 @@ $button$
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div list="Library [[New Tiddler]]" title="$:/StoryList">
+<div created="20210331145544006" list="[[New Tiddler]]" modified="20210331145747007" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210326145222949" list="$:/core/ui/Buttons/more-page-actions $:/core/ui/Buttons/save-wiki $:/core/ui/Buttons/control-panel $:/core/ui/Buttons/new-tiddler $:/core/ui/Buttons/home $:/core/ui/Buttons/close-all $:/core/ui/Buttons/fold-all $:/core/ui/Buttons/unfold-all $:/core/ui/Buttons/permaview $:/core/ui/Buttons/new-journal $:/core/ui/Buttons/new-image $:/core/ui/Buttons/import $:/core/ui/Buttons/export-page $:/core/ui/Buttons/advanced-search $:/core/ui/Buttons/manager $:/core/ui/Buttons/tag-manager $:/core/ui/Buttons/language $:/core/ui/Buttons/palette $:/core/ui/Buttons/theme $:/core/ui/Buttons/storyview $:/core/ui/Buttons/encryption $:/core/ui/Buttons/timestamp $:/core/ui/Buttons/full-screen $:/core/ui/Buttons/print $:/core/ui/Buttons/refresh" modified="20210326145244429" title="$:/tags/PageControls">
@@ -12736,7 +12736,7 @@ $button$
 &lt;&lt;toc-selective-expandable 'library' sort[title]&gt;&gt;
 &lt;/div&gt;</pre>
 </div>
-<div created="20210326151929534" modified="20210331141112200" stream-list="[[New Tiddler/20210331141112197]] [[New Tiddler/20210326151940392]] [[New Tiddler/20210326151956688]] [[New Tiddler/20210326152016387]] [[New Tiddler/20210326152022193]] [[New Tiddler/20210326152158416]] [[New Tiddler/20210326152445984]] [[New Tiddler/20210326152226484]]" stream-type="default" tags="library" title="New Tiddler">
+<div created="20210326151929534" modified="20210331145834035" stream-list="[[New Tiddler/20210331141112197]] [[New Tiddler/20210326151940392]] [[New Tiddler/20210326151956688]] [[New Tiddler/20210326152016387]] [[New Tiddler/20210326152022193]] [[New Tiddler/20210326152158416]] [[New Tiddler/20210326152445984]] [[New Tiddler/20210326152226484]]" stream-type="default" tags="library" title="New Tiddler">
 <pre></pre>
 </div>
 <div created="20210326151940394" modified="20210326151957193" parent="New Tiddler" stream-list="[[New Tiddler/20210326151944029]] [[New Tiddler/20210326151952321]]" stream-type="default" title="New Tiddler/20210326151940392">
@@ -12775,10 +12775,10 @@ How old are you?
 <div created="20210326152158417" modified="20210326152214932" parent="New Tiddler" stream-type="default" title="New Tiddler/20210326152158416">
 <pre>good old reference plugin with many settings!</pre>
 </div>
-<div created="20210326152226485" modified="20210326152238506" parent="New Tiddler" stream-type="default" title="New Tiddler/20210326152226484">
+<div created="20210326152226485" modified="20210331145805429" parent="New Tiddler" stream-type="default" title="New Tiddler/20210326152226484">
 <pre>{{New Tiddler/20210326151940392||.strm}}</pre>
 </div>
-<div created="20210326152445986" modified="20210326152507268" parent="New Tiddler" stream-type="default" title="New Tiddler/20210326152445984">
+<div created="20210326152445986" modified="20210331144751309" parent="New Tiddler" stream-type="default" title="New Tiddler/20210326152445984">
 <pre>For all the functions visit the Keyboard Shortcuts tiddlywiki config page!</pre>
 </div>
 <div created="20210331141112199" modified="20210331141436186" parent="New Tiddler" stream-type="default" title="New Tiddler/20210331141112197">
