@@ -1,3 +1,3 @@
 # tiddlystudy
 
-Lighter and more updated version of TiddlyResearch.
+Light and powerful note taking study tool.
