@@ -147,6 +147,8 @@ Error message and password prompt
 
 <li>$:/core</li>
 
+<li>$:/DefaultTiddlers</li>
+
 <li>$:/Import</li>
 
 <li>$:/isEncrypted</li>
@@ -169,9 +171,13 @@ Error message and password prompt
 
 <li>$:/plugins/kebi/tiddlystudy-references</li>
 
+<li>$:/plugins/kebi/tiddlystudy-references/config/no-id</li>
+
 <li>$:/plugins/rmnvsl/krystal</li>
 
 <li>$:/plugins/rmnvsl/krystal/config/close</li>
+
+<li>$:/plugins/rmnvsl/krystal/config/tiddlerwidth</li>
 
 <li>$:/plugins/snowgoon88/edit-comptext</li>
 
@@ -188,6 +194,8 @@ Error message and password prompt
 <li>$:/state/plugin-info--896887961-$:/plugins/kebi/relink-tweaks</li>
 
 <li>$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy</li>
+
+<li>$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy-references</li>
 
 <li>$:/state/plugin-info--896887961-$:/plugins/rmnvsl/krystal</li>
 
@@ -212,6 +220,52 @@ Error message and password prompt
 <li>$:/themes/tiddlywiki/snowwhite</li>
 
 <li>$:/themes/tiddlywiki/vanilla</li>
+
+<li>Example</li>
+
+<li>Example/20210504152559430</li>
+
+<li>This is an example</li>
+
+<li>This is an example/20210504151741984</li>
+
+<li>This is an example/20210504151752789</li>
+
+<li>This is an example/20210504151805532</li>
+
+<li>This is an example/20210504151912883</li>
+
+<li>This is an example/20210504151923224</li>
+
+<li>This is an example/20210504151938058</li>
+
+<li>This is an example/20210504152052254</li>
+
+<li>This is an example/20210504152216623</li>
+
+<li>This is an example/20210504152224017</li>
+
+<li>This is an example/20210504152235177</li>
+
+<li>This is an example/20210504152240830</li>
+
+<li>This is an example/20210504152248243</li>
+
+<li>This is an example/20210504152256839</li>
+
+<li>This is an example/20210504152306140</li>
+
+<li>This is an example/20210504152317528</li>
+
+<li>This is an example/20210504152551868</li>
+
+<li>This is an example/20210504152727464</li>
+
+<li>This is an example/20210504152810348</li>
+
+<li>This is an example/20210504153006002</li>
+
+<li>This is an example/20210504153127569</li>
 
 </ul>
 </p>
@@ -10097,11 +10151,15 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div created="20210504152138318" modified="20210504152145668" title="$:/DefaultTiddlers">
+<pre>GettingStarted
+[[This is an example]]</pre>
+</div>
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
-# [[$:/plugins/snowgoon88/edit-comptext]]
-# [[$:/plugins/kebi/tiddlystudy-references]]</pre>
+# [[$:/config/ShortcutInfo/backlink]]
+# [[$:/config/ShortcutInfo/transclude]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -11445,7 +11503,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20210315161701535" description="core" modified="20210331141059040" name="tiddlystudy" plugin-type="plugin" tags="" title="$:/plugins/kebi/tiddlystudy" type="application/json" version="1.0.5">
+<div created="20210315161701535" description="core" modified="20210504154314444" name="tiddlystudy" plugin-type="plugin" tags="" title="$:/plugins/kebi/tiddlystudy" type="application/json" version="1.0.0">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/_Styles&quot;: {
@@ -11557,6 +11615,24 @@ Error message and password prompt
             &quot;title&quot;: &quot;$:/plugins/kebi/tiddlystudy/css&quot;,
             &quot;tags&quot;: &quot;$:/tags/Stylesheet&quot;,
             &quot;modified&quot;: &quot;20210331140938957&quot;
+        },
+        &quot;$:/config/ShortcutInfo/image-html&quot;: {
+            &quot;text&quot;: &quot;Insert an image (HTML) (Anki compatible)&quot;,
+            &quot;title&quot;: &quot;$:/config/ShortcutInfo/image-html&quot;,
+            &quot;modified&quot;: &quot;20200905061942356&quot;,
+            &quot;created&quot;: &quot;20200815091746791&quot;
+        },
+        &quot;$:/config/ShortcutInfo/backlink&quot;: {
+            &quot;text&quot;: &quot;Create a backlink&quot;,
+            &quot;title&quot;: &quot;$:/config/ShortcutInfo/backlink&quot;,
+            &quot;modified&quot;: &quot;20200905061235804&quot;,
+            &quot;created&quot;: &quot;20200816072659005&quot;
+        },
+        &quot;$:/config/ShortcutInfo/transclude&quot;: {
+            &quot;text&quot;: &quot;Transclude a node&quot;,
+            &quot;title&quot;: &quot;$:/config/ShortcutInfo/transclude&quot;,
+            &quot;modified&quot;: &quot;20200905061935896&quot;,
+            &quot;created&quot;: &quot;20200820044636487&quot;
         }
     }
 }</pre>
@@ -11709,6 +11785,9 @@ Error message and password prompt
         }
     }
 }</pre>
+</div>
+<div created="20201127053541813" modified="20210504152715837" title="$:/plugins/kebi/tiddlystudy-references/config/no-id">
+<pre>enable</pre>
 </div>
 <div author="Roman Veselý" bag="default" core-version="&gt;=5.0.8" created="20210503195627856" dependents="" description="Horizontal Story River" list="readme settings" modified="20210503195627856" name="Krystal" plugin-priority="1" plugin-type="plugin" revision="0" source="https://github.com/crazko/krystal" title="$:/plugins/rmnvsl/krystal" type="application/json" version="0.4.0">
 <pre>{
@@ -11882,6 +11961,9 @@ Error message and password prompt
 </div>
 <div created="20210503202546584" modified="20210503202546584" title="$:/plugins/rmnvsl/krystal/config/close">
 <pre>disable</pre>
+</div>
+<div created="20210504151659832" modified="20210504151700167" title="$:/plugins/rmnvsl/krystal/config/tiddlerwidth">
+<pre>700</pre>
 </div>
 <div author="AlainD" core-version="&gt;=5.1.13" dependents="" description="Editor with some on-line completion capabilities" list="readme usage examples" plugin-type="plugin" source="https://github.com/snowgoon88/TW5-extendedit" title="$:/plugins/snowgoon88/edit-comptext" type="application/json" version="0.9.3">
 <pre>{
@@ -12712,11 +12794,14 @@ Error message and password prompt
 <div created="20210503200135520" modified="20210503200137992" title="$:/state/plugin-info--896887961-$:/plugins/kebi/relink-tweaks">
 <pre>no</pre>
 </div>
-<div created="20210503200139680" modified="20210503200144376" title="$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy">
+<div created="20210503200139680" modified="20210504154240723" title="$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy">
 <pre>no</pre>
 </div>
-<div created="20210503195608715" modified="20210503202807530" title="$:/state/plugin-info--896887961-$:/plugins/rmnvsl/krystal">
-<pre>yes</pre>
+<div created="20210504151705752" modified="20210504152720046" title="$:/state/plugin-info--896887961-$:/plugins/kebi/tiddlystudy-references">
+<pre>no</pre>
+</div>
+<div created="20210503195608715" modified="20210504151703948" title="$:/state/plugin-info--896887961-$:/plugins/rmnvsl/krystal">
+<pre>no</pre>
 </div>
 <div created="20210503202544495" modified="20210503202844411" title="$:/state/plugin-info--896887961-$:/plugins/rmnvsl/krystal--627067479">
 <pre>settings</pre>
@@ -12727,8 +12812,8 @@ Error message and password prompt
 <div created="20210503195947088" modified="20210503195950760" title="$:/state/tab--824315756">
 <pre>$:/plugins/flibbles/relink/ui/configuration/Attributes</pre>
 </div>
-<div created="20210503195607294" modified="20210503202939690" title="$:/state/tab-1749438307">
-<pre>$:/plugins/sq/streams/Settings</pre>
+<div created="20210503195607294" modified="20210504154322356" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20210503195902927" modified="20210503195902927" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/PageControls</pre>
@@ -12736,7 +12821,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210503202938260" list="$:/ControlPanel GettingStarted" modified="20210503202938260" title="$:/StoryList">
+<div created="20210504154318636" list="GettingStarted [[This is an example]]" modified="20210504154318636" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210503195850843" modified="20210503195850843" title="$:/theme">
@@ -13169,6 +13254,79 @@ Error message and password prompt
         }
     }
 }</pre>
+</div>
+<div created="20210504152508889" modified="20210504152559432" stream-list="Example/20210504152559430" stream-type="default" tags="" title="Example">
+<pre></pre>
+</div>
+<div created="20210504152559431" modified="20210504152605524" parent="Example" stream-type="default" title="Example/20210504152559430">
+<pre>{{This is an example||.strm}}</pre>
+</div>
+<div created="20210504151725488" modified="20210504153127839" stream-list="[[This is an example/20210504151741984]] [[This is an example/20210504151805532]] [[This is an example/20210504151938058]] [[This is an example/20210504152052254]] [[This is an example/20210504152224017]] [[This is an example/20210504152317528]] [[This is an example/20210504153006002]] [[This is an example/20210504152810348]] [[This is an example/20210504152727464]]" stream-type="default" tags="" title="This is an example">
+<pre></pre>
+</div>
+<div created="20210504151741986" modified="20210504151907345" parent="This is an example" stream-list="[[This is an example/20210504151752789]]" stream-type="default" title="This is an example/20210504151741984">
+<pre>parent node</pre>
+</div>
+<div created="20210504151752790" modified="20210504151903027" parent="This is an example/20210504151741984" stream-type="default" title="This is an example/20210504151752789">
+<pre>child node</pre>
+</div>
+<div created="20210504151805533" modified="20210504151956046" parent="This is an example" stream-list="[[This is an example/20210504151912883]] [[This is an example/20210504151923224]]" stream-type="default" title="This is an example/20210504151805532">
+<pre>mobile support</pre>
+</div>
+<div created="20210504151912885" modified="20210504151921274" parent="This is an example/20210504151805532" stream-type="default" title="This is an example/20210504151912883">
+<pre>double tap to edit</pre>
+</div>
+<div created="20210504151923225" modified="20210504151937571" parent="This is an example/20210504151805532" stream-type="default" title="This is an example/20210504151923224">
+<pre>swipe on a node for more options</pre>
+</div>
+<div created="20210504151938059" modified="20210504152216911" parent="This is an example" stream-list="[[This is an example/20210504152216623]]" stream-type="default" title="This is an example/20210504151938058">
+<pre>autocompletion plugin</pre>
+</div>
+<div created="20210504152052255" modified="20210504153257560" parent="This is an example" stream-list="[[This is an example/20210504153127569]]" stream-type="default" title="This is an example/20210504152052254">
+<pre>&lt;$macrocall $name=&quot;rememberq&quot; id=&lt;&lt;currentTiddler&gt;&gt; question=&quot;
+You can create anki cards
+&quot; answer=&quot;
+This is a Q&amp;A card
+&quot; reference={{{ [{!!parent}get[text]] }}}/&gt;</pre>
+</div>
+<div created="20210504152216624" modified="20210504152545301" parent="This is an example/20210504151938058" stream-type="default" title="This is an example/20210504152216623">
+<pre>Use it after typing [[</pre>
+</div>
+<div created="20210504152224019" modified="20210504152908601" parent="This is an example" stream-list="[[This is an example/20210504152235177]] [[This is an example/20210504152240830]] [[This is an example/20210504152248243]] [[This is an example/20210504152256839]] [[This is an example/20210504152306140]]" stream-type="default" title="This is an example/20210504152224017">
+<pre>Check the references at the bottom</pre>
+</div>
+<div created="20210504152235178" modified="20210504152240020" parent="This is an example/20210504152224017" stream-list="" stream-type="default" title="This is an example/20210504152235177">
+<pre>blue for backlinks</pre>
+</div>
+<div created="20210504152240831" modified="20210504152247752" parent="This is an example/20210504152224017" stream-type="default" title="This is an example/20210504152240830">
+<pre>red for mentions in the title</pre>
+</div>
+<div created="20210504152248244" modified="20210504152256570" parent="This is an example/20210504152224017" stream-type="default" title="This is an example/20210504152248243">
+<pre>gray for mentions in the text</pre>
+</div>
+<div created="20210504152256840" modified="20210504152302654" parent="This is an example/20210504152224017" stream-type="default" title="This is an example/20210504152256839">
+<pre>yellow for tags</pre>
+</div>
+<div created="20210504152306141" modified="20210504152311987" parent="This is an example/20210504152224017" stream-type="default" title="This is an example/20210504152306140">
+<pre>white for transclusions</pre>
+</div>
+<div created="20210504152317529" modified="20210504153007024" parent="This is an example" stream-list="[[This is an example/20210504152551868]]" stream-type="default" title="This is an example/20210504152317528">
+<pre>Transclusions with streams support (try it with &lt;kbd&gt;ctrl+T&lt;/kbd&gt;)</pre>
+</div>
+<div created="20210504152551869" modified="20210504152556013" parent="This is an example/20210504152317528" stream-type="default" title="This is an example/20210504152551868">
+<pre>[[Example]]</pre>
+</div>
+<div created="20210504152727467" modified="20210504153445570" parent="This is an example" stream-type="default" title="This is an example/20210504152727464">
+<pre>Want to contribute? (support for tweaks or plugins made by me) =&gt; https://github.com/kebifurai/tiddlystudy</pre>
+</div>
+<div created="20210504152810350" modified="20210504153512053" parent="This is an example" stream-type="default" title="This is an example/20210504152810348">
+<pre>For all the features check the plugins config and keyboard shortcuts tabs</pre>
+</div>
+<div created="20210504153006004" modified="20210504153104549" parent="This is an example" stream-type="default" title="This is an example/20210504153006002">
+<pre>Move between tiddlers with &lt;kbd&gt;alt+Right&lt;/kbd&gt;/&lt;kbd&gt;alt+Left&lt;/kbd&gt; (or &lt;kbd&gt;alt+Up&lt;/kbd&gt;/&lt;kbd&gt;alt+Down&lt;/kbd&gt; when in mobile view)</pre>
+</div>
+<div created="20210504153127571" modified="20210504153319729" parent="This is an example/20210504152052254" stream-type="default" title="This is an example/20210504153127569">
+<pre>Use &lt;kbd&gt;ctrl+shift+H&lt;/kbd&gt; for external images (local images not supported yet)</pre>
 </div>
 
 
